@@ -1,0 +1,84 @@
+@media screen and (max-width: 950px) {
+    .profile_box_menu {
+        display: flex;
+    }
+    .profile_box {
+        display: none;
+    }
+    .header_wrapper.Active {
+        max-height: 100vh;
+        transition: max-height 0.8s ease-in;
+    }
+    .header_wrapper {
+        max-height: 130px;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out;
+    }
+    .header_box_logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .header_box_searcher {
+        order: 2;
+        width: 100%;
+    }
+    .input_search {
+        flex-grow: 1;
+    }
+    .header_box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        border: 1px solid gainsboro;
+    }
+    .header_logo {
+        max-width: 150px;
+    }
+    .header_box_logo_inner {
+        flex-grow: 1;
+    }
+    .header_box_menu {
+        display: flex;
+    }
+    .header_box_info {
+        flex-direction: column;
+    }
+    .header_box_info_social {
+        align-self: flex-start;
+    }
+    .navigation_box {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header_wrapper {
+        max-height: 80px;
+    }
+    .header_logo {
+        width: 80px;
+    }
+    .menu_button {
+        font-size: 20px;
+    }
+    .call_number {
+        font-size: 12px;
+    }
+    .call_button {
+        font-size: 11px;
+    }
+    .social_img {
+        width: 20px;
+        height: 20px;
+    }
+    .intro_title {
+        font-size: 38px;
+    }
+    .intro_descr {
+        font-size: 15px;
+    }
+    .catalog_button {
+        font-size: 20px;
+    }
+}
