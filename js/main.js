@@ -8,3 +8,13 @@ menuButton.addEventListener('click', () => {
         menu.classList.add('Active')
     }
 })
+
+const profileButton = document.querySelector('.profile_button')
+profileButton.addEventListener('click', () => {
+    const profileBox = document.querySelector('.profile_actions')
+    if (profileBox.className === 'profile_actions Active') {
+        profileBox.classList.remove('Active')
+    } else {
+        profileBox.classList.add('Active')
+    }
+})

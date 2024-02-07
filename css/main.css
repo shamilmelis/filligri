@@ -125,12 +125,7 @@ html, body {
   flex-direction: column;
 }
 
-.profile_box_menu:hover .profile_actions {
-  display: flex;
-  animation: appear 0.2s ease-in;
-}
-
-.profle_button {
+.profile_button {
   background: none;
   font-size: 20px;
   border: none;
@@ -139,14 +134,14 @@ html, body {
   color: rgba(96, 174, 207, 1);
 }
 
-.profile_box:hover .profile_actions {
-  display: flex;
-  animation: appear 0.2s ease-in;
-}
 
 @keyframes appear {
   0% {display: none; opacity: 0}
   100% {display: flex; opacity: 1}
+}
+
+.profile_actions.Active {
+  display: flex;
 }
 
 .profile_actions {

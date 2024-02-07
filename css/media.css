@@ -1,7 +1,4 @@
 @media screen and (max-width: 950px) {
-    .profile_box_menu {
-        display: flex;
-    }
     .profile_box {
         display: none;
     }
