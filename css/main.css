@@ -529,7 +529,7 @@
     padding: 100px 40px 90px;
     gap: 25px;
     height: 100%;
-    background-image: url("../assets/image/9.svg");
+    background-image: url("../assets/image/9.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 55px;
@@ -566,7 +566,7 @@
     gap: 20px;
     height: 100%;
     border-radius: 55px;
-    background-image: url("../assets/image/10.svg");
+    background-image: url("../assets/image/10.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 15px 0 70px;
@@ -677,7 +677,7 @@
     align-items: flex-start;
     gap: 20px;
     height: 100%;
-    background-image: url("/assets/image/11.svg");
+    background-image: url("/assets/image/11.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 15px 0 60px;
