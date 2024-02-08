@@ -648,6 +648,7 @@
 .auto_chemical_img {
     width: 100%;
     height: auto;
+    border-radius: 44.34px 0px 0 0px;
 }
 
 .auto-clear-care_route {
@@ -677,7 +678,7 @@
     align-items: flex-start;
     gap: 20px;
     height: 100%;
-    background-image: url("/assets/image/11.png");
+    background-image: url("/assets/image/6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 15px 0 60px;
@@ -789,7 +790,7 @@
 
 .discount_section {
     margin-top: 80px;
-    background-image: url("/assets/image/7.png");
+    background-image: url("/assets/image/7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
