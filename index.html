@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Filligri</title>
 </head>
 <body>
@@ -29,13 +30,9 @@
                         <img src="assets/logo/1.png" alt="img" class="header_logo">
                     </div>
                     <div class="profile_box_menu">
-                        <button class="profile_button_mobile">
+                        <a href="#" class="profile_button">
                             <i class="fa-solid fa-user"></i>
-                        </button>
-                        <div class="profile_actions_mobile">
-                            <button class="login_button">Войти</button>
-                            <button class="sign-up_button">Разегистрироваться</button>
-                        </div>
+                        </a>
                     </div>
                     <div class="header_box_menu">
                         <button class="menu_button">
@@ -62,13 +59,9 @@
                             <img src="assets/vector/3.svg" alt="vk" class="social_img">
                         </div>
                         <div class="profile_box">
-                            <button class="profile_button">
+                            <a href="#" class="profile_button">
                                 <i class="fa-solid fa-user"></i>
-                            </button>
-                            <div class="profile_actions">
-                                <button class="login_button">Войти</button>
-                                <button class="sign-up_button">Разегистрироваться</button>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -96,8 +89,38 @@
             </div>
         </div>
     </section>
+    <section class="tabs_section">
+        <div class="tabs_container">
+            <div class="tabs_box">
+                <h1 class="tabs_title">Хит продаж</h1>
+                <div class="tabs_slider_wrapper">
+                    <div class="tabs_slider_box swiper mySwiper">
+                        <div class="tabs_slider_inner swiper-wrapper">
+                            <div class="slider-bar"></div>
+                            <div class="swiper-slide">
+                                <button class="button-category-none">Уход за собой</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="button-category-none">Автохимия</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="button-category-none">Промышленная химия</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="button-category-none">Продукция для гостиниц</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="button-category-none">Профессиональный клининг</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-category-select">Все категории</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

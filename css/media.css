@@ -17,6 +17,7 @@
     .header_box_logo {
         width: 100%;
         display: flex;
+        gap: 10px;
         align-items: center;
     }
     .header_box_searcher {
@@ -29,7 +30,6 @@
     .header_box {
         flex-direction: column;
         align-items: flex-start;
-        gap: 50px;
         border: 1px solid gainsboro;
     }
     .header_logo {
@@ -43,6 +43,7 @@
     }
     .header_box_info {
         flex-direction: column;
+        padding: 40px 0 0;
     }
     .header_box_info_social {
         align-self: flex-start;
@@ -80,5 +81,17 @@
     }
     .catalog_button {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .button-category-active {
+        font-size: 12px;
+    }
+    .button-category-none {
+        font-size: 12px;
+    }
+    .button-category-select {
+        font-size: 12px;
     }
 }

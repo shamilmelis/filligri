@@ -9,22 +9,37 @@ menuButton.addEventListener('click', () => {
     }
 })
 
-const profileButton = document.querySelector('.profile_button')
-profileButton.addEventListener('click', () => {
-    const profileBox = document.querySelector('.profile_actions')
-    if (profileBox.className === 'profile_actions Active') {
-        profileBox.classList.remove('Active')
-    } else {
-        profileBox.classList.add('Active')
-    }
-})
+const catalogButton = document.getElementsByClassName('button-category-none')
+for (let i = 0; i < catalogButton.length; i++) {
+    const slideBar = document.querySelector('.slider-bar')
+    catalogButton[i].addEventListener('click', () => {
+        const unSelected = document.querySelectorAll('.button-category-none')
+        Array.from(unSelected).forEach(el => {
+            el.classList.remove('button-category-active')
+        })
+        setTimeout(() => {
+            catalogButton[i].classList.add('button-category-active')
+        }, 10)
+    })
+}
+let swiper = new Swiper(".swiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
-const profileMobButton = document.querySelector('.profile_button_mobile')
-profileMobButton.addEventListener('click', () => {
-    const profileBox = document.querySelector('.profile_actions_mobile')
-    if (profileBox.className === 'profile_actions_mobile Active') {
-        profileBox.classList.remove('Active')
-    } else {
-        profileBox.classList.add('Active')
-    }
-})
+if (document.documentElement.clientWidth < 450) {
+    let swiper = new Swiper(".swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+}
