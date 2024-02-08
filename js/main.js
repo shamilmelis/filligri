@@ -26,10 +26,6 @@ let swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
     spaceBetween: 30,
     freeMode: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 });
 
 if (document.documentElement.clientWidth < 450) {
@@ -37,9 +33,19 @@ if (document.documentElement.clientWidth < 450) {
         slidesPerView: 'auto',
         spaceBetween: 10,
         freeMode: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
     });
 }
+
+const cardsSwiper = new Swiper(".mySecondSwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Filligri</title>
 </head>
-<body>
+<body id="body">
 <header>
     <div class="header_wrapper">
         <div class="header_container">
@@ -116,10 +117,237 @@
                     </div>
                     <button class="button-category-select">Все категории</button>
                 </div>
+                <div class="navigation_position">
+                    <div class="cards_slider_wrapper swiper mySecondSwiper">
+                        <div class="cards_slider_box swiper-wrapper">
+                            <div class="cards_slider_card swiper-slide">
+                                <img src="./assets/cards/1.png" alt="card" class="card_img">
+                                <div class="card_info">
+                                    <h1 class="card_title">ARAVIA LABORATORIES VITAMIN-C POWER RADIANCE CREAM</h1>
+                                    <p class="card_description">Крем для сияния кожи лица</p>
+                                    <span class="card_price">342 ₽</span>
+                                </div>
+                                <button class="toCart-button">В корзину</button>
+                            </div>
+                            <div class="cards_slider_card swiper-slide">
+                                <img src="./assets/cards/2.png" alt="card" class="card_img">
+                                <div class="card_info">
+                                    <h1 class="card_title">AESOP A ROSE BY ANY OTHER NAME BODY CLEANSER</h1>
+                                    <p class="card_description">Гель для душа с ароматом розы</p>
+                                    <span class="card_price">5000 ₽</span>
+                                </div>
+                                <button class="toCart-button">В корзину</button>
+                            </div>
+                            <div class="cards_slider_card swiper-slide">
+                                <img src="./assets/cards/3.png" alt="card" class="card_img">
+                                <div class="card_info">
+                                    <h1 class="card_title">PAYOT LISSE SERUM NUIT RENOVATEUR AU RETINOL</h1>
+                                    <p class="card_description">Ночная обновляющая сыворотка </p>
+                                    <span class="card_price">3200 ₽</span>
+                                </div>
+                                <button class="toCart-button">В корзину</button>
+                            </div>
+                            <div class="cards_slider_card swiper-slide">
+                                <img src="./assets/cards/4.png" alt="card" class="card_img">
+                                <div class="card_info">
+                                    <h1 class="card_title">ART&FACT. ANTI-AGE AND LIGHTENING FACE CREAM</h1>
+                                    <p class="card_description">Крем для разглаживания морщин </p>
+                                    <span class="card_price">740 ₽</span>
+                                </div>
+                                <button class="toCart-button">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation_block">
+                        <div class="swiper-button-prev previousSlideButton"></div>
+                        <div class="swiper-button-next nextSlideButton"></div>
+                        <div class="swiper-pagination dotsSlide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog_section">
+        <div class="catalog_container">
+            <div class="catalog_box">
+                <div class="catalog_box_first">
+                    <div class="col-7 cat-col">
+                        <div class="box_catalog">
+                            <h1 class="box_catalog_title">Каталог</h1>
+                            <button class="box_catalog_button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-5 chemic-col">
+                        <div class="box_household_chemical">
+                            <h1 class="box_household_chemical_title">Бытовая химия</h1>
+                            <div class="box_household_chemical_figure">
+                                <button class="box_household_chemical_button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_box_second">
+                    <div class="col-7 catalogs-col">
+                        <div class="box_auto-clear-care">
+                            <div class="col-4 auto-clear-care_col">
+                                <div class="auto-clear-care_box">
+                                    <div class="auto-clear-care_inner">
+                                        <h1 class="auto-chemical_title">Автохимия</h1>
+                                    </div>
+                                    <img src="./assets/image/2.svg" alt="auto-chemical" class="auto_chemical_img">
+                                    <div class="auto-clear-care_route">
+                                        <button class="auto-clear-care_button-route">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 auto-clear-care_col">
+                                <div class="auto-clear-care_box">
+                                    <div class="auto-clear-care_inner">
+                                        <h1 class="auto-chemical_title">Клининг</h1>
+                                    </div>
+                                    <img src="./assets/image/3.svg" alt="cleaning" class="auto_chemical_img">
+                                    <div class="auto-clear-care_route">
+                                        <button class="auto-clear-care_button-route">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 auto-clear-care_col">
+                                <div class="auto-clear-care_box">
+                                    <div class="auto-clear-care_inner">
+                                        <h1 class="auto-chemical_title">Уход за собой</h1>
+                                    </div>
+                                    <img src="./assets/image/4.svg" alt="self-care" class="auto_chemical_img">
+                                    <div class="auto-clear-care_route">
+                                        <button class="auto-clear-care_button-route">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 pro-for-living_col">
+                        <div class="pro-for-living_box">
+                            <h1 class="pro-for-living_box_title">Продукции для гостиниц</h1>
+                            <div class="pro-for-living_box_figure">
+                                <button class="pro-for-living_box_button">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us_section">
+        <div class="about-us_container">
+            <div class="about-us_row">
+                <div class="col-7 about-us_img_col">
+                    <div class="about-us_img_box">
+                        <img src="/assets/image/13.png" alt="about us" class="about-us_img">
+                    </div>
+                </div>
+                <div class="col-5 about-us_info_col">
+                    <div class="about-us_info_box">
+                        <h1 class="about-us_title">О нас</h1>
+                        <div class="about-us_inner">
+                            <p class="about-us_par">FILLIGRI - компания, занимающая лидирующую позицию на рынке бытовой химии. Мы
+                                специализируемся на производстве инновационных и экологически безопасных средств для
+                                уборки и ухода за домом</p>
+                            <p class="about-us_par">Наше кредо - предоставить клиентам высокое качество продукции. Мы внимательно следим за
+                                последними тенденциями и разработками в области бытовой химии, чтобы предложить нашим
+                                клиентам самые передовые и инновационные решения.</p>
+                            <p class="about-us_par">
+                                При выборе компании FILLIGRI вы можете рассчитывать на высокую надежность, инновационные
+                                подходы и заботу о вашем комфорте.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discount_section">
+        <div class="discount_container">
+            <div class="discount_row">
+                <div class="discount_box">
+                    <h1 class="discount_title">Товары для дома</h1>
+                    <p class="discount_descr">
+                        <span class="discount_value">20%</span> Скидка
+                    </p>
+                    <button class="catalog-button">Каталог</button>
+                </div>
             </div>
         </div>
     </section>
 </main>
+<footer>
+    <section class="footer_section">
+        <div class="footer_container">
+            <div class="footer_logo_box">
+                <img src="/assets/logo/2.svg" alt="logo" class="footer_logo">
+            </div>
+            <div class="footer_box">
+                <div class="col-6 news-letter_col">
+                    <div class="news-letter_box">
+                        <h1 class="news-letter_title">Получай новостную рассылку</h1>
+                        <div class="news-letter_inner">
+                            <input type="text" name="" id="" class="news-letter_input" placeholder="Ваш e-mail">
+                            <button class="news-letter_subs">ПОДПИСАТЬСЯ</button>
+                        </div>
+                        <p class='submit_all_politicans_text'>
+                            Нажимая кнопку «Подписаться» вы соглашаетесь с нашей политикой
+                            конфиденциальности
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 nav-routes_col">
+                    <div class="footer_navigation_box">
+                        <div class="col-4 navigation_box_col">
+                            <div class="navigation_box_box">
+                                <h2 class="nav_route">Навигация</h2>
+                                <div class="nav_links_box">
+                                    <a href="#" class="nav_links">Где купить</a>
+                                    <a href="#" class="nav_links">О нас</a>
+                                    <a href="#" class="nav_links">Акции</a>
+                                    <a href="#" class="nav_links">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 navigation_box_col">
+                            <div class="navigation_box_box">
+                                <h2 class="nav_route">Продукты</h2>
+                                <div class="nav_links_box">
+                                    <a href="#" class="catalog_links">Уход за собой</a>
+                                    <a href="#" class="catalog_links">Все для дома</a>
+                                    <a href="#" class="catalog_links">Автохимия</a>
+                                    <a href="#" class="catalog_links">Пром. химия</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 navigation_box_col">
+                            <div class="navigation_box_box">
+                                <h2 class="nav_route">Контакты</h2>
+                                <div class="nav_links_box">
+                                    <a href="tel:+79092585901" class="phone_route">+7 (909 ) 258 59 01</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
