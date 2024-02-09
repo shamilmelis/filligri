@@ -783,7 +783,7 @@
 
 .discount_section {
     margin-top: 80px;
-    background-image: url("/assets/image/7.jpg");
+    background-image: url("../assets/image/7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
