@@ -223,7 +223,7 @@
     position: relative;
     overflow: hidden;
     padding: 50px 0 230px;
-    background-image: url("../assets/image/1.png");
+    background-image: url("../assets/image/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -232,11 +232,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 120%;
+    backdrop-filter: blur(6px);
 }
 
 .intro_container {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -253,7 +254,7 @@
 .intro_title {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 54px;
+    font-size: 64px;
     color: rgba(255, 255, 255, 1);
     z-index: 999;
 }
@@ -284,7 +285,7 @@
 }
 
 .tabs_container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -319,10 +320,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.tabs_slider_box {
-
 }
 
 .tabs_slider_inner {
@@ -361,16 +358,12 @@
     cursor: pointer;
 }
 
-.cards_slider_wrapper {
-
-}
-
 .cards_slider_box {
     padding: 10px 2px;
 }
 
 .cards_slider_card {
-    width: 270px !important;
+    width: 310px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -501,7 +494,7 @@
 }
 
 .catalog_container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -529,7 +522,7 @@
     padding: 100px 40px 90px;
     gap: 25px;
     height: 100%;
-    background-image: url("../assets/image/9.png");
+    background-image: url("../assets/image/9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 55px;
@@ -566,7 +559,7 @@
     gap: 20px;
     height: 100%;
     border-radius: 55px;
-    background-image: url("../assets/image/10.png");
+    background-image: url("../assets/image/10.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 15px 0 70px;
@@ -648,7 +641,7 @@
 .auto_chemical_img {
     width: 100%;
     height: auto;
-    border-radius: 44.34px 0px 0 0px;
+    border-radius: 44.34px 0px 0 44.34px;
 }
 
 .auto-clear-care_route {
@@ -678,7 +671,7 @@
     align-items: flex-start;
     gap: 20px;
     height: 100%;
-    background-image: url("/assets/image/6.jpg");
+    background-image: url("../assets/image/11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 40px 15px 0 60px;
@@ -720,7 +713,7 @@
 }
 
 .about-us_container {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -793,6 +786,7 @@
     background-image: url("/assets/image/7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .discount_row {
@@ -850,7 +844,7 @@
 }
 
 .footer_container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 

@@ -177,6 +177,31 @@
         flex-direction: column;
         width: 100%;
     }
+    .nav_links {
+        font-size: 14px;
+    }
+    .catalog_links {
+        font-size: 14px;
+    }
+    .phone_route {
+        font-size: 13px;
+    }
+    .selected-col {
+        width: 100%;
+    }
+    .news-letter_box {
+        padding: 10px;
+    }
+    .footer_logo_box {
+        padding: 20px 30px;
+    }
+    .news-letter_subs {
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+    .news-letter_title {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 450px) {
