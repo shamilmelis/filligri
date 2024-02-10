@@ -620,7 +620,8 @@ body {
 }
 
 .col-7 {
-    width: 58.33%;
+    flex-basis: 58.33%;
+    transition: 0.5s ease-in;
 }
 
 .cat-col {
@@ -665,7 +666,8 @@ body {
 }
 
 .col-5 {
-    width: 41.67%;
+    flex-basis: 41.67%;
+    transition: 0.5s ease-in;
 }
 
 .box_household_chemical {
@@ -721,7 +723,8 @@ body {
 }
 
 .col-4 {
-    width: 33.333%;
+    flex-basis: 33.333%;
+    transition: 0.5s ease-in;
 }
 
 .box_auto-clear-care {
@@ -768,6 +771,26 @@ body {
     background: rgba(116, 169, 193, 1) !important;
 }
 
+.absolute_elements {
+    position: relative;
+    overflow: hidden;
+}
+
+.spray_element {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    height: 78%;
+}
+
+.wheel_element {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 82%;
+    height: 60%;
+}
+
 .auto_chemical_img {
     width: 100%;
     height: auto;
@@ -780,8 +803,8 @@ body {
     bottom: 0;
     right: 0;
     background: #fff;
-    padding: 10px 0 0 10px;
-    border-radius: 28px 0 0 0;
+    padding: 12px 0 0 12px;
+    border-radius: 38px 0 0 0;
 }
 
 .auto-clear-care_button-route {
@@ -1002,7 +1025,8 @@ body {
 }
 
 .col-6 {
-    width: 50%;
+    flex-basis: 50%;
+    transition: 0.5s ease-in;
 }
 
 .news-letter_box {
@@ -1073,7 +1097,6 @@ body {
 }
 
 .navigation_box_col {
-    width: 33.333%;
     padding: 10px;
 }
 

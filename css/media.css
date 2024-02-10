@@ -69,6 +69,9 @@
     .auto-chemical_title {
         font-size: 14px;
     }
+    .auto-clear-care_route {
+        border-radius: 28px 0 0 0;
+    }
     .auto-clear-care_button-route {
         width: 30px;
         height: 30px;
@@ -82,10 +85,12 @@
 
 @media screen and (max-width: 860px) {
     .nav-routes_col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .news-letter_col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
 }
 
@@ -109,29 +114,34 @@
 
 @media screen and (max-width: 720px) {
     .cat-col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .chemic-col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .box_household_chemical {
         padding: 40px 15px 40px 70px;
     }
     .catalogs-col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .pro-for-living_col {
-        width: 100%;
+        flex-basis: 100%;
     }
     .pro-for-living_box {
         padding: 40px 15px 40px 70px;
         background-position: bottom;
     }
     .about-us_img_col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .about-us_info_col {
-        width: 100%;
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
     }
     .footer_section {
         padding: 30px 0;
@@ -186,13 +196,15 @@
         padding: 40px;
     }
     .navigation_box_col {
-        width: 50%;
+        flex-basis: 50%;
+        transition: 0.5s ease-in;
     }
 }
 
 @media screen and (max-width: 500px) {
     .auto-clear-care_col {
-        width: 50%;
+        flex-basis: 50%;
+        transition: 0.5s ease-in;
     }
     .news-letter_inner {
         flex-direction: column;
