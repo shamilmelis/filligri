@@ -161,7 +161,6 @@
         padding: 40px 15px 40px 70px;
     }
     .catalogs-col {
-        order: 2;
         flex-basis: 100%;
         transition: 0.5s ease-in;
     }
@@ -257,7 +256,11 @@
     }
     .auto-clear-care_col:nth-child(3) {
         flex-basis: 100%;
+<<<<<<< HEAD
         transition: 0.5s ease-in;
+=======
+        transition: 0.5s ease-in
+>>>>>>> e19121db3820c217d2131b713633254e8dc5a1bd
     }
     .news-letter_inner {
         flex-direction: column;
