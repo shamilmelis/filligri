@@ -285,7 +285,7 @@ body {
 }
 
 .popup_box_routes_box{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
@@ -318,6 +318,8 @@ body {
     padding-left: 10px;
 }
 
+
+
 .nav_routes {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -336,6 +338,14 @@ body {
     transition: 0.2s ease-in;
 }
 
+
+.vave_figure {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
 
 .figure {
     position: absolute;

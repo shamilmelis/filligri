@@ -20,7 +20,7 @@
         display: none;
     }
     .header_wrapper.Active {
-        max-height: 100vh;
+        max-height: 400vh;
         transition: max-height 0.8s ease-in;
     }
     .header_wrapper {
@@ -156,6 +156,12 @@
     .about-us_img_col {
         padding: 0 !important;
     }
+    .main-routes_col {
+        flex-basis: 100%;
+    }
+    .catalog-routes_col {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -208,6 +214,9 @@
     }
     .auto-chemical_title {
         padding: 0;
+    }
+    .cards_slider_card {
+        width: 99% !important;
     }
 }
 
