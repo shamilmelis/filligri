@@ -207,7 +207,6 @@ body {
 }
 
 .navigation_box {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -215,17 +214,25 @@ body {
     gap: 50px;
 }
 
+.catalog_popup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 .catalog_popup_box {
     position: absolute;
-    top: 70px;
-    right: 100px;
+    top: 50px;
+    left: 0;
     display: none;
     transition: 0.2s ease-in;
     flex-wrap: wrap;
     background: #fff;
     z-index: 999;
+    width: 850px;
     border-radius: 25px;
-    min-width: 60%;
 }
 
 .popup_box_main-routes {
@@ -233,6 +240,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
     background: rgba(116, 169, 193, 1);
     height: 100%;
@@ -251,11 +259,12 @@ body {
 .main-route_box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px;
-    align-items: center;
     border-radius: 25px 0 0 25px;
     z-index: 999;
     border: 2px solid rgba(0, 0, 0, 0.0);
+    width: 100%;
 }
 
 .main-route_box:hover {
@@ -280,7 +289,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
     flex-grow: 1;
 }
 
@@ -325,7 +336,15 @@ body {
     font-weight: 500;
     font-size: 15px;
     color: #fff;
-    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.nav_routes > i {
+    opacity: 0;
+    font-size: 12px;
+    margin-left: 5px;
+    transition: 0.2s ease-in;
 }
 
 .intro_section {

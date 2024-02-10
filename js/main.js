@@ -122,3 +122,17 @@ catalogPopup.addEventListener('mouseenter', () => {
         el.style.display = "none"
     })
 })
+
+if (document.documentElement.clientWidth < 949) {
+    catalogPopup.addEventListener('click', () => {
+        const el = document.querySelector('.catalog_popup_box')
+        const chevron = document.querySelector('.fa-chevron-down')
+        if (el.className === 'catalog_popup_box Active') {
+            el.classList.remove('Active')
+            chevron.classList.remove('Active')
+        } else {
+            el.classList.add('Active')
+            chevron.classList.add('Active')
+        }
+    })
+}

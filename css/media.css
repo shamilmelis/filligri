@@ -7,6 +7,12 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .catalog_popup_box {
+        width: 700px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .auto-chemical_title {
         font-size: 18px;
@@ -65,6 +71,7 @@
     }
     .navigation_box {
         flex-direction: column;
+        align-items: flex-start;
     }
     .auto-chemical_title {
         font-size: 12px;
@@ -77,11 +84,32 @@
         width: 30px;
         height: 30px;
     }
+    .catalog_popup {
+        width: 100%;
+    }
     .catalog_popup_box {
+        width: 100%;
         position: relative;
         top: 0;
         left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in;
     }
+    .catalog_popup_box.Active {
+        margin-top: 15px;
+        max-height: 100vh;
+        transition: max-height 0.5s ease-in;
+    }
+    .fa-chevron-down.Active {
+        transform: rotate(180deg);
+        transition: 0.2s ease-in;
+        margin-left: 6px;
+    }
+    .nav_routes > i {
+        opacity: 1;
+    }
+
 }
 
 @media screen and (max-width: 860px) {
@@ -225,6 +253,10 @@
 @media screen and (max-width: 500px) {
     .auto-clear-care_col {
         flex-basis: 50%;
+        transition: 0.5s ease-in;
+    }
+    .auto-clear-care_col:nth-child(3) {
+        flex-basis: 100%;
         transition: 0.5s ease-in;
     }
     .news-letter_inner {
