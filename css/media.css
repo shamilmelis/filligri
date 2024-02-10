@@ -110,6 +110,13 @@
     .main_route_link {
         font-size: 14px;
     }
+    .intro_section {
+        background-image: url("../assets/image/10.png");
+        transition: 0.2s ease-in;
+    }
+    .figure {
+        height: 200%;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -198,6 +205,9 @@
     .navigation_box_col {
         flex-basis: 50%;
         transition: 0.5s ease-in;
+    }
+    .auto-chemical_title {
+        padding: 0;
     }
 }
 
