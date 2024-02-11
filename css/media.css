@@ -31,12 +31,6 @@
     }
 }
 @media screen and (max-width: 950px) {
-    .header_mobile_logo {
-        display: block;
-    }
-    .header_logo {
-        display: none;
-    }
     .profile_box_menu {
         display: flex;
     }
@@ -48,7 +42,7 @@
         transition: max-height 0.8s ease-in;
     }
     .header_wrapper {
-        max-height: 80px;
+        max-height: 140px;
         overflow: hidden;
         transition: max-height 0.8s ease-in-out;
     }

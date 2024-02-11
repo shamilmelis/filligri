@@ -57,12 +57,6 @@ body {
     display: flex;
 }
 
-.header_mobile_logo {
-    display: none;
-    width: auto;
-    height: auto;
-}
-
 .header_logo {
     display: block;
     margin: 0 auto;
