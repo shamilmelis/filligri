@@ -100,6 +100,11 @@
     .catalog_popup {
         width: 100%;
     }
+    .catalog_popup_box.Active {
+        top: 10px;
+        max-height: 200vh;
+        transition: max-height 1.5s linear;
+    }
     .catalog_popup_box {
         width: 100%;
         display: flex;
@@ -109,14 +114,13 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 1s linear;
-    }
-    .catalog_popup_box.Active {
-        top: 10px;
-        max-height: 200vh;
-        transition: max-height 1.5s linear;
+        border-radius: 0;
     }
     .popup_box_main-routes {
         border-radius: 0;
+    }
+    .popup_box_routes_box {
+        padding: 15px;
     }
     .fa-chevron-down.Active {
         transform: rotate(180deg);

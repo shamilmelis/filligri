@@ -54,7 +54,7 @@ if (document.documentElement.clientWidth > 950) {
         for (let i = 0; i < routes.length; i++) {
             routes[i].addEventListener('mouseenter', () => {
                 allBox.forEach(el => el.classList.remove('Active'))
-                for (let x = 0 ; x < box.length; x++) {
+                for (let x = 0; x < box.length; x++) {
                     switch (routes[i].innerText) {
                         case 'Бытовая химия':
                             box[0].classList.add('Active')
@@ -95,7 +95,7 @@ if (document.documentElement.clientWidth < 950) {
         for (let i = 0; i < routes.length; i++) {
             routes[i].addEventListener('mouseenter', () => {
                 allBox.forEach(el => el.classList.remove('Active'))
-                for (let x = 0 ; x < box.length; x++) {
+                for (let x = 0; x < box.length; x++) {
                     switch (routes[i].innerText) {
                         case 'Бытовая химия':
                             box[0].classList.add('Active')
@@ -127,13 +127,13 @@ if (document.documentElement.clientWidth < 949) {
         const el = document.querySelector('.catalog_popup_box')
         const chevron = document.querySelector('.fa-chevron-down')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
-        if (el.className === 'catalog_popup_box Active') {
-            el.classList.remove('Active')
-            chevron.classList.remove('Active')
-            allBox.forEach((el) => el.classList.remove('Active'))
-        } else {
+        if (el.className === 'catalog_popup_box') {
             el.classList.add('Active')
             chevron.classList.add('Active')
+            allBox.forEach(el => el.classList.remove('Active'))
+        } else if (el.className === 'catalog_popup_box Active') {
+            el.classList.remove('Active')
+            chevron.classList.remove('Active')
         }
     })
 }
