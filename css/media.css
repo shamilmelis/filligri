@@ -13,12 +13,30 @@
     }
 }
 
+@media screen and (max-width: 1020px) {
+    .phone_route {
+        font-size: 13px;
+    }
+    .catalog_links {
+        font-size: 13px;
+    }
+    .nav_links {
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .auto-chemical_title {
         font-size: 18px;
     }
 }
 @media screen and (max-width: 950px) {
+    .header_mobile_logo {
+        display: block;
+    }
+    .header_logo {
+        display: none;
+    }
     .profile_box_menu {
         display: flex;
     }
@@ -30,7 +48,7 @@
         transition: max-height 0.8s ease-in;
     }
     .header_wrapper {
-        max-height: 130px;
+        max-height: 80px;
         overflow: hidden;
         transition: max-height 0.8s ease-in-out;
     }
@@ -98,7 +116,7 @@
     }
     .catalog_popup_box.Active {
         margin-top: 15px;
-        max-height: 100vh;
+        max-height: 200vh;
         transition: max-height 0.5s ease-in;
     }
     .fa-chevron-down.Active {
@@ -109,7 +127,12 @@
     .nav_routes > i {
         opacity: 1;
     }
+}
 
+@media screen and (max-width: 900px) {
+    .phone_route {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -140,11 +163,25 @@
         font-size: 14px;
     }
     .intro_section {
-        background-image: url("../assets/image/10.png");
+        background-image: url("../assets/image/1-mobile.png");
         transition: 0.2s ease-in;
+        background-size: 100%;
+        padding: 0 0 200px;
+    }
+    .intro_title {
+        font-size: 42px;
+    }
+    .intro_descr {
+        font-size: 17px;
+    }
+    .catalog_button {
+        font-size: 16px;
     }
     .figure {
-        height: 200%;
+        display: none;
+    }
+    .nav_route {
+        font-size: 15px;
     }
 }
 
@@ -190,6 +227,15 @@
     }
     .catalog-routes_col {
         flex-basis: 100%;
+    }
+    .catalog_section {
+        padding: 25px 5px 50px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .intro_section {
+        padding: 0 0 140px;
     }
 }
 
@@ -246,6 +292,28 @@
     }
     .cards_slider_card {
         width: 99% !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .intro_section {
+        padding: 0 0 100px;
+    }
+    .tabs_section {
+        padding: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .intro_title {
+        font-size: 30px;
+    }
+    .intro_descr {
+        font-size: 13px;
+    }
+    .catalog_button {
+        font-size: 13px;
     }
 }
 
@@ -317,6 +385,18 @@
     }
     .auto-chemical_title {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro_title {
+        font-size: 30px;
+    }
+    .intro_descr {
+        font-size: 13px;
+    }
+    .catalog_button {
+        margin-top: 25px;
     }
 }
 

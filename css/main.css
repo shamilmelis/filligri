@@ -57,6 +57,12 @@ body {
     display: flex;
 }
 
+.header_mobile_logo {
+    display: none;
+    width: auto;
+    height: auto;
+}
+
 .header_logo {
     display: block;
     margin: 0 auto;
@@ -295,7 +301,11 @@ body {
     flex-grow: 1;
 }
 
-.popup_box_routes_box{
+.popup_box_routes_box.Active {
+    display: flex;
+}
+
+.popup_box_routes_box {
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -444,12 +454,17 @@ body {
 
 .tabs_slider_wrapper {
     display: flex;
+}
+
+.tabs_slider_box {
+    display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .tabs_slider_inner {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .button-category-active {
@@ -470,26 +485,6 @@ body {
     background: none;
     cursor: pointer;
     transition: 0.3s ease-in;
-}
-
-.button-category-select {
-    min-width: 150px !important;
-    padding: 6px 12px;
-    border: 2px solid rgba(116, 169, 193, 1);
-    border-radius: 99em;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgba(116, 169, 193, 1);
-    background: none;
-    cursor: pointer;
-}
-
-.button-category-select::after {
-    content: "\f078";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    padding: 0 0 0 5px;
 }
 
 .cards_slider_box {
@@ -1187,6 +1182,7 @@ body {
 .nav_links_box {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 7px;
     padding: 20px 0 0 0;
 }
@@ -1212,7 +1208,7 @@ body {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #fff;
-    padding-left: 8px;
+    padding-left: 6px;
 }
 
 .phone_route {
