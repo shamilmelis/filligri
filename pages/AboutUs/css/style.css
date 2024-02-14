@@ -712,6 +712,7 @@ main {
     text-align: center;
     z-index: 4;
     background: #fff;
+    padding: 6px;
 }
 
 
@@ -722,7 +723,7 @@ main {
     width: 200%;
     height: 2px;
     z-index: -2;
-    background: #74A9C1;
+    background: rgba(116, 190, 222, 1);
 }
 
 .advantiges_row {
@@ -743,8 +744,8 @@ main {
     height: 100%;
     gap: 20px;
     border-radius: 34.63px;
-    border: 3px solid #74A9C1;
-    border-bottom: 5px solid #74A9C1;
+    border: 3px solid rgba(116, 190, 222, 1);
+    border-bottom: 5px solid rgba(116, 190, 222, 1);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 20px;
 }
