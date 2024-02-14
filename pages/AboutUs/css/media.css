@@ -160,6 +160,9 @@
     .benefit_text:before {
         bottom: -10px;
     }
+    .advantiges_section {
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -239,15 +242,21 @@
         padding: 0;
     }
     .benefits-second_col {
-        flex-basis: 100%;
+        flex-basis: 70%;
+    }
+    .benefits-second_col:nth-child(2) {
+        flex-basis: 30%;
+        padding: 0;
     }
     .filligri_png {
-        width: 25%;
+        width: 100%;
     }
     .benefits_second_row {
         padding: 0;
     }
-
+    .invite_section {
+        padding: 20px 20px 40px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -286,6 +295,9 @@
     }
     .invite_box {
         padding: 50px 20px;
+    }
+    .advantige_col {
+        padding: 20px 10px;
     }
 }
 

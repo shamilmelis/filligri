@@ -7,7 +7,6 @@ menuButton.addEventListener('click', () => {
         menu.classList.add('Active')
     }
 })
-
 const catalogButton = document.getElementsByClassName('button-category-none')
 for (let i = 0; i < catalogButton.length; i++) {
     const slideBar = document.querySelector('.slider-bar')
@@ -23,27 +22,8 @@ for (let i = 0; i < catalogButton.length; i++) {
     })
 }
 
-const cardsSwiper = new Swiper(".mySecondSwiper", {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    freeMode: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-const catalogPopup = document.querySelector('.nav_routes')
-
-if (document.documentElement.clientWidth > 950) {
+let catalogPopup = document.querySelector('.nav_routes')
+if (document.documentElement.clientWidth > 951) {
     catalogPopup.addEventListener('mouseenter', () => {
         const el = document.querySelector('.catalog_popup_box')
         el.style.display = "flex"
@@ -87,7 +67,6 @@ if (document.documentElement.clientWidth > 950) {
 if (document.documentElement.clientWidth < 950) {
     catalogPopup.addEventListener('mouseenter', () => {
         const el = document.querySelector('.catalog_popup_box')
-        el.classList.add('Active')
         const routes = document.getElementsByClassName('main_route_link')
         const box = document.getElementsByClassName('popup_box_routes_box')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
@@ -127,13 +106,27 @@ if (document.documentElement.clientWidth < 949) {
         const el = document.querySelector('.catalog_popup_box')
         const chevron = document.querySelector('.fa-chevron-down')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
-        if (el.className === 'catalog_popup_box') {
-            el.classList.add('Active')
-            chevron.classList.add('Active')
-            allBox.forEach(el => el.classList.remove('Active'))
-        } else if (el.className === 'catalog_popup_box Active') {
-            el.classList.remove('Active')
-            chevron.classList.remove('Active')
-        }
+        el.classList.toggle('Active')
+        chevron.classList.toggle('Active')
+        allBox.forEach(el => el.classList.remove('Active'))
     })
 }
+
+const cardsSwiper = new Swiper(".mySecondSwiper", {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
