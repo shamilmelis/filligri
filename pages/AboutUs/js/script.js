@@ -66,7 +66,6 @@ if (document.documentElement.clientWidth > 951) {
 
 if (document.documentElement.clientWidth < 950) {
     catalogPopup.addEventListener('mouseenter', () => {
-        const el = document.querySelector('.catalog_popup_box')
         const routes = document.getElementsByClassName('main_route_link')
         const box = document.getElementsByClassName('popup_box_routes_box')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
@@ -106,8 +105,13 @@ if (document.documentElement.clientWidth < 949) {
         const el = document.querySelector('.catalog_popup_box')
         const chevron = document.querySelector('.fa-chevron-down')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
-        el.classList.toggle('Active')
-        chevron.classList.toggle('Active')
-        allBox.forEach(el => el.classList.remove('Active'))
+        if (el.className === 'catalog_popup_box') {
+            el.classList.add('Active')
+            chevron.classList.add('Active')
+        } else {
+            el.classList.remove('Active')
+            chevron.classList.remove('Active')
+            allBox.forEach(el => el.classList.remove('Active'))
+        }
     })
 }
