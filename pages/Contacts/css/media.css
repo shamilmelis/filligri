@@ -1,0 +1,354 @@
+@media screen and (max-width: 1200px) {
+    .catalog_popup_box {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .work-time_box {
+        width: 50%;
+    }
+    .number-of-phone_box {
+        width: 50%;
+    }
+    .mail_box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .phone_route {
+        font-size: 13px;
+    }
+    .catalog_links {
+        font-size: 13px;
+    }
+    .nav_links {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .profile_box_menu {
+        display: flex;
+    }
+    .profile_box {
+        display: none;
+    }
+    .header_wrapper.Active {
+        max-height: 400vh;
+        transition: max-height 0.8s ease-in;
+    }
+    .header_wrapper {
+        max-height: 140px;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out;
+    }
+    .header_box_logo {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .header_box_searcher {
+        order: 2;
+        width: 100%;
+    }
+    .input_search {
+        flex-grow: 1;
+    }
+    .header_box {
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid gainsboro;
+    }
+    .header_logo {
+        margin: 0;
+        max-width: 150px;
+    }
+    .header_box_logo_inner {
+        flex-grow: 1;
+    }
+    .header_box_menu {
+        display: flex;
+    }
+    .header_box_info {
+        flex-direction: column;
+        padding: 40px 0 0;
+    }
+    .header_box_info_social {
+        align-self: flex-start;
+    }
+    .navigation_box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .catalog_popup {
+        width: 100%;
+    }
+    .catalog_popup_box.Active {
+        top: 10px;
+        max-height: 200vh;
+        transition: max-height 1.5s linear;
+    }
+    .catalog_popup_box {
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: 10px;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s linear;
+    }
+    .popup_box_main-routes {
+        border-radius: 0;
+    }
+    .popup_box_routes_box {
+        padding: 15px;
+    }
+    .fa-chevron-down.Active {
+        transform: rotate(180deg);
+        transition: 0.2s ease-in;
+        margin-left: 6px;
+    }
+    .nav_routes > i {
+        opacity: 1;
+    }
+    .work-time_box {
+        width: 70%;
+    }
+    .number-of-phone_box {
+        width: 70%;
+    }
+    .mail_box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .phone_route {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .nav-routes_col {
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
+    }
+    .news-letter_col {
+        flex-basis: 100%;
+        transition: 0.5s ease-in;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .route_link {
+        font-size: 14px;
+    }
+    .main_route_link {
+        font-size: 14px;
+    }
+    .catalog_button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .filligri-img_col {
+        flex-basis: 100%;
+    }
+    .filligri-descr_col {
+        flex-basis: 100%;
+    }
+    .vector_2 {
+        top: 20%;
+        right: 3px;
+    }
+    .about_filligri_title {
+        font-size: 17px;
+    }
+    .about_filligri-bg_row {
+        padding: 0 10px;
+    }
+    .vector_3 {
+        width: 500px;
+    }
+    .work-time_box {
+        width: 100%;
+    }
+    .number-of-phone_box {
+        width: 100%;
+    }
+    .mail_box {
+        width: 100%;
+    }
+    .form_col {
+        flex-basis: 100%;
+    }
+    .info_box {
+        align-items: flex-start;
+    }
+    .info_col {
+        padding-top: 50px;
+        flex-basis: 100%;
+    }
+    .contacts_title {
+        font-size: 20px;
+    }
+    .map_inner {
+        right: -100%;
+        transition: 0.2s;
+    }
+    .map_inner.Active {
+        right: 1%;
+        transition: 0.2s;
+    }
+    .map_open_btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer_section {
+        padding: 30px 0;
+    }
+    .main-routes_col {
+        flex-basis: 100%;
+    }
+    .catalog-routes_col {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header_wrapper {
+        max-height: 80px;
+    }
+    .header_logo {
+        width: 80px;
+    }
+    .menu_button {
+        font-size: 20px;
+    }
+    .call_number {
+        font-size: 12px;
+    }
+    .call_button {
+        font-size: 11px;
+    }
+    .social_img {
+        width: 20px;
+        height: 20px;
+    }
+    .intro_title {
+        font-size: 38px;
+    }
+    .intro_descr {
+        font-size: 15px;
+    }
+    .catalog_button {
+        font-size: 20px;
+    }
+    .box_catalog_button {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+    }
+    .box_catalog_title {
+        font-size: 37px;
+    }
+    .navigation_box_col {
+        flex-basis: 50%;
+        transition: 0.5s ease-in;
+    }
+    .contacts_section {
+        padding: 20px 0 0;
+    }
+    .input_box {
+        border-radius: 25px;
+    }
+    .name_input {
+        font-size: 13px;
+    }
+    .email_input {
+        font-size: 13px;
+    }
+    .message_textarea {
+        font-size: 13px;
+        border-radius: 25px;
+    }
+    .submit_button {
+        margin-top: 10px;
+        padding: 11px 15px;
+        font-size: 12px;
+    }
+    .work-time_title {
+        font-size: 16px;
+    }
+    .work-time_daily {
+        font-size: 13px;
+    }
+    .work-time_value {
+        font-size: 13px;
+    }
+    .work-time_box i {
+        font-size: 25px;
+    }
+    .number-of-phone_title {
+        font-size: 16px;
+    }
+    .number-of-phone_box_value {
+        font-size: 13px;
+    }
+    .number-of-phone_box i {
+        font-size: 25px;
+    }
+    .mail_box_title {
+        font-size: 16px;
+    }
+    .mail_box_value {
+        font-size: 13px;
+    }
+    .mail_box i {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news-letter_inner {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav_links {
+        font-size: 14px;
+    }
+    .catalog_links {
+        font-size: 14px;
+    }
+    .phone_route {
+        font-size: 13px;
+    }
+    .news-letter_box {
+        padding: 10px;
+    }
+    .footer_logo_box {
+        padding: 20px 30px;
+    }
+    .news-letter_subs {
+        padding: 10px 22px;
+        font-size: 13px;
+    }
+    .news-letter_title {
+        font-size: 14px;
+    }
+    .catalog-button {
+        font-size: 17px;
+    }
+    .marshrut_link {
+        font-size: 12px;
+    }
+}
+
