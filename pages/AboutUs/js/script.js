@@ -65,7 +65,7 @@ if (document.documentElement.clientWidth > 951) {
 }
 
 if (document.documentElement.clientWidth < 950) {
-    catalogPopup.addEventListener('mouseenter', () => {
+    catalogPopup.addEventListener('click', () => {
         const routes = document.getElementsByClassName('main_route_link')
         const box = document.getElementsByClassName('popup_box_routes_box')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
