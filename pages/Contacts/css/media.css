@@ -177,13 +177,13 @@
         width: 500px;
     }
     .work-time_box {
-        width: 100%;
+        width: auto;
     }
     .number-of-phone_box {
-        width: 100%;
+        width: auto;
     }
     .mail_box {
-        width: 100%;
+        width: auto;
     }
     .form_col {
         flex-basis: 100%;
@@ -199,17 +199,15 @@
         font-size: 20px;
     }
     .map_inner {
-        right: -100%;
-        transition: 0.2s;
-    }
-    .map_inner.Active {
         right: 1%;
         transition: 0.2s;
     }
-    .map_open_btn {
-        display: block;
+    .map_inner.Hide {
+        right: -100%;
+        transition: 0.2s;
     }
 }
+
 
 @media screen and (max-width: 720px) {
     .footer_section {
@@ -315,6 +313,27 @@
     .mail_box i {
         font-size: 25px;
     }
+    .map_inner {
+        padding: 30px;
+    }
+    .office_title {
+        font-size: 16px;
+    }
+    .office_adress {
+        font-size: 11px;
+    }
+    .office_point {
+        font-size: 21px;
+    }
+    .develop_title {
+        font-size: 16px;
+    }
+    .develop_adress {
+        font-size: 11px;
+    }
+    .develop_point {
+        font-size: 21px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -348,7 +367,49 @@
         font-size: 17px;
     }
     .marshrut_link {
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .info_box {
+        align-items: center;
+    }
+    .work-time_box {
+        width: 50%;
+    }
+    .number-of-phone_box {
+        width: 50%;
+    }
+    .mail_box {
+        width: 50%;
     }
 }
 
+@media screen and (max-width: 400px) {
+    .work-time_box {
+        width: 80%;
+    }
+    .number-of-phone_box {
+        width: 80%;
+    }
+    .mail_box {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .map_open_btn {
+        display: block;
+        top: 80%;
+        right: 2%;
+    }
+    .map_inner {
+        width: 270px;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 780px) {
+    .map_open_btn {
+        display: block;
+        left: 1%;
+    }
+}

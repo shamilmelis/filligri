@@ -576,6 +576,19 @@ main {
     height: 100%;
 }
 
+.sm_svg {
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 99em;
+    background: rgba(202, 202, 202, 1);
+}
+
+.socialmedia_inner:hover .sm_svg {
+    background: rgba(96, 174, 207, 1);
+    transition: 0.2s;
+}
+
 .socialmedia_inner i {
     padding: 8px;
     border-radius: 99em;
@@ -697,7 +710,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     height: 100%;
 }
 
@@ -859,7 +872,6 @@ main {
     display: none;
     position: absolute;
     top: 50%;
-    left: 1%;
     border: none;
     background: none;
     font-size: 25px;
