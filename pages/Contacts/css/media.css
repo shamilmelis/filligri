@@ -206,6 +206,9 @@
         right: -100%;
         transition: 0.2s;
     }
+    .info_box {
+        gap: 30px;
+    }
 }
 
 
@@ -371,6 +374,7 @@
     }
     .info_box {
         align-items: center;
+        gap: 20px;
     }
     .work-time_box {
         width: 50%;
@@ -385,13 +389,22 @@
 
 @media screen and (max-width: 400px) {
     .work-time_box {
-        width: 80%;
+        width: 60%;
+    }
+    .work-time_inner {
+        gap: 3px;
     }
     .number-of-phone_box {
-        width: 80%;
+        width: 60%;
+    }
+    .number-of-phone_inner {
+        gap: 3px;
     }
     .mail_box {
-        width: 80%;
+        width: 60%;
+    }
+    .mail_box_inner {
+        gap: 3px;
     }
 }
 

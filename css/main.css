@@ -228,7 +228,10 @@ body {
     align-items: flex-start;
 }
 
-
+.catalog-routes_col {
+    background: rgba(245, 245, 245, 1);
+    border-radius: 0 25px 25px 0;
+}
 .catalog_popup_box {
     position: absolute;
     top: 50px;
@@ -339,6 +342,7 @@ body {
     border: none;
     background: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav_routes > i {

@@ -60,13 +60,14 @@ if (document.documentElement.clientWidth > 951) {
         }
         el.addEventListener('mouseleave', () => {
             el.style.display = "none"
+            allBox.forEach(el => el.classList.remove('Active'))
         })
     })
 }
 
 if (document.documentElement.clientWidth < 950) {
     catalogPopup.addEventListener('click', () => {
-        const routes = document.getElementsByClassName('main_route_link')
+        const routes = document.getElementsByClassName('main-route_box')
         const box = document.getElementsByClassName('popup_box_routes_box')
         const allBox = document.querySelectorAll('.popup_box_routes_box')
         box[0].classList.add('Active')

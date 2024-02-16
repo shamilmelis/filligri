@@ -240,6 +240,11 @@ main {
     border-radius: 25px;
 }
 
+.catalog-routes_col {
+    background: rgba(245, 245, 245, 1);
+    border-radius: 0 25px 25px 0;
+}
+
 .popup_box_main-routes {
     overflow: hidden;
     position: relative;
@@ -337,6 +342,7 @@ main {
     border: none;
     background: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav_routes > i {
@@ -585,19 +591,6 @@ main {
 }
 
 .socialmedia_inner:hover .sm_svg {
-    background: rgba(96, 174, 207, 1);
-    transition: 0.2s;
-}
-
-.socialmedia_inner i {
-    padding: 8px;
-    border-radius: 99em;
-    color: #fff;
-    font-size: 15px;
-    background: rgba(202, 202, 202, 1);
-}
-
-.socialmedia_inner:hover i {
     background: rgba(96, 174, 207, 1);
     transition: 0.2s;
 }
