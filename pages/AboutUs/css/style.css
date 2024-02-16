@@ -228,8 +228,15 @@ main {
 }
 
 .catalog-routes_col {
+    position: relative;
     background: rgba(245, 245, 245, 1);
     border-radius: 0 25px 25px 0;
+}
+
+.circle_vector {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .catalog_popup_box {
