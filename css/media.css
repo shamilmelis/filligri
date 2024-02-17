@@ -386,6 +386,104 @@
     .intro_section {
         padding: 0 0 75px;
     }
+    .register_button {
+        font-size: 14px;
+    }
+    .login_button {
+        font-size: 14px;
+    }
+    .reg_popup_inner {
+        gap: 10px;
+    }
+    .reg_name_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .reg_data_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .reg_mail_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .reg_popup_sex {
+        gap: 10px;
+    }
+    .sex_name {
+        font-size: 11px;
+    }
+    .sex_box_toggler {
+        width: 40px;
+        height: 18px;
+    }
+    .woman_toggler {
+        width: 18px;
+        height: 18px;
+    }
+    .man_toggler {
+        width: 18px;
+        height: 18px;
+    }
+    .reg_pass_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .reg_pass-again_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    #first-checker {
+        font-size: 12px;
+    }
+    #second-checker {
+        font-size: 12px;
+    }
+    .get_news_text {
+        font-size: 12px;
+    }
+    .get_news_checkbox {
+        width: 15px;
+        height: 15px;
+    }
+    .reg_button {
+        font-size: 12px;
+    }
+    .reg_popup_box {
+        padding: 20px 20px;
+        width: 100%;
+    }
+    .login_name_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .login_pass_input {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+    .login_enter_button {
+        font-size: 12px;
+    }
+    .login_popup_inputs {
+        padding: 0;
+    }
+    .reg_popup_reg-button {
+        width: 100%;
+    }
+    .reg_button {
+        width: 100%;
+    }
+    .login_enter_button {
+        width: 100%;
+    }
+    .forget_mail_input {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .send_code_button  {
+        width: 100%;
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -421,5 +519,11 @@
 @media screen and (max-width: 370px) {
     .auto-chemical_title {
         font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .get_news_text {
+        font-size: 10px;
     }
 }

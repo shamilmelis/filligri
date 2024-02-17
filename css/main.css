@@ -2,6 +2,10 @@ body {
     min-width: 320px;
 }
 
+body.Hidden {
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1232,4 +1236,596 @@ body {
     font-size: 15px;
     color: #fff;
     text-decoration: none;
+}
+
+@keyframes appear {
+    0% {display: none; opacity: 0}
+    100% {display: flex; opacity: 1}
+}
+
+.reg_popup_wrapper.Active {
+    display: flex;
+    animation: appear 0.1s ease-in;
+}
+.reg_popup_wrapper {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 20px;
+}
+.reg_popup_box.Login {
+    height: 90%;
+}
+.reg_popup_box {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 450px;
+    border-radius: 40px;
+    background: #fff;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.reg_popup_routes {
+    display: flex;
+    gap: 20px;
+}
+
+.close_regPopup-btn {
+    border: none;
+    background: none;
+    font-size: 25px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.close_regPopup-btn img {
+    width: 20px;
+}
+
+.reg_popup_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+}
+
+.register_button.Active {
+    color: rgba(96, 174, 207, 1);
+    transition: 0.2s;
+}
+.register_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login_button.Active {
+    color: rgba(96, 174, 207, 1);
+    transition: 0.2s;
+}
+.login_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@keyframes disappear {
+    0% {display: flex; opacity: 1}
+    100% {display: none; opacity: 0}
+}
+
+.reg_popup_inputs.Active {
+    display: flex;
+    animation: appear 0.2s ease-in;
+}
+.reg_popup_inputs.Closed {
+    display: none;
+    animation: disappear 0.2s ease-in;
+}
+.reg_popup_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    transition: 0.2s ease-in;
+}
+.reg_name_input.Error {
+    border: 1px solid rgba(219, 47, 47, 1);
+    transition: 0.2s;
+}
+
+.reg_name_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+    transition: 0.2s;
+}
+
+.error_name_text.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.error_name_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
+.error_data_text.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.error_data_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
+.error_mail_text.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.error_mail_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
+.reg_data_input.Error {
+    border: 1px solid rgba(219, 47, 47, 1);
+    transition: 0.2s;
+}
+.reg_data_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+}
+
+.reg_mail_input.Error {
+    border: 1px solid rgba(219, 47, 47, 1);
+    transition: 0.2s;
+}
+.reg_mail_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+}
+
+.reg_popup_sex {
+    padding: 15px 0 0 0;
+    display: flex;
+    gap: 50px;
+}
+
+.reg_popup_sex_inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sex_box_toggler.Active {
+    background: rgba(96, 174, 207, 1);
+    transition: 0.2s;
+}
+
+.sex_box_toggler {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    background: rgba(202, 202, 202, 1);
+    border: none;
+    border-radius: 99em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sex_name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000;
+}
+.woman_toggler.Active {
+    right: 0 !important;
+    transition: 0.3s;
+    border: 1px solid rgba(96, 174, 207, 1);
+}
+.woman_toggler {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 99em;
+    transition: 0.3s;
+    border: 1px solid gainsboro;
+}
+
+.man_toggler.Active {
+    right: 0 !important;
+    transition: 0.3s;
+    border: 1px solid rgba(96, 174, 207, 1);
+}
+.man_toggler {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 99em;
+    transition: 0.3s;
+    border: 1px solid gainsboro;
+}
+
+.reg_popup_passwords {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+
+.reg_pass_input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+    width: 100%;
+}
+
+.error_pass_text.Active {
+    display: block;
+    animation: appear 0.3s ease-in;
+}
+.error_pass_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
+.reg_pass_input {
+    outline: none;
+    width: 100%;
+    padding: 14px 22px;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-radius: 40px;
+    flex-grow: 1;
+}
+
+.error_pass-again_text.Active {
+    display: block;
+    animation: appear 0.3s ease-in;
+}
+.error_pass-again_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
+
+.reg_pass-again_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    border-radius: 40px;
+    flex-grow: 1;
+}
+
+.check_password {
+    padding: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.check-again_password {
+    padding: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#first-checker {
+    color: rgba(202, 202, 202, 1);
+    font-size: 16px;
+}
+#second-checker {
+    color: rgba(202, 202, 202, 1);
+    font-size: 16px;
+}
+
+.reg_popup_getnews {
+    position: relative;
+    padding: 10px 0 0 0;
+    display: flex;
+    gap: 10px;
+}
+
+.get_news_checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+}
+
+.get_news_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+}
+
+.reg_popup_reg-button {
+    padding: 20px 0;
+    display: flex;
+    align-self: center;
+}
+
+.reg_button {
+    text-align: center;
+    padding: 9px 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    border-radius: 40px;
+    background: rgba(96, 174, 207, 1);
+    cursor: pointer;
+}
+
+@keyframes appear {
+    0% {display: none; opacity: 0}
+    100% {display: flex; opacity: 1}
+}
+
+.login_popup_inputs.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.login_popup_inputs {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 0 0 0;
+    width: 100%;
+}
+
+.login_popup_inputs_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+}
+
+.login_name_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+}
+
+.login_pass_input {
+    outline: none;
+    padding: 14px 22px;
+    width: 100%;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid rgba(202, 202, 202, 1);
+    border-radius: 40px;
+}
+
+.login_popup_actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.login_enter_button {
+    border: none;
+    padding: 9px 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fff;
+    border-radius: 40px;
+    background: rgba(96, 174, 207, 1);
+    cursor: pointer;
+}
+
+.forget_password_button {
+    border: none;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.forget_password_wrapper.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.forget_password_wrapper {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.forget_password_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid gainsboro;
+}
+
+.forget_mail_input {
+    padding: 10px 15px;
+    border: 1px solid gainsboro;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.sent_password_text.Active {
+    display: flex;
+    animation: appear 0.3s ease-in;
+}
+.sent_password_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(96, 174, 207, 1);
+}
+
+.send_code_button.Disabled {
+    transition: 0.2s;
+    background: rgba(202, 202, 202, 1);
+}
+.send_code_button {
+    padding: 12px 25px;
+    border-radius: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    background: rgba(96, 174, 207, 1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close_forget_popup_button {
+    align-self: flex-end;
+    border: none;
+    background: none;
+    color: rgba(202, 202, 202, 1);
+    cursor: pointer;
+}
+
+.close_forget_popup_button img {
+    width: 15px;
+}
+
+.get_password_box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.get_password_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.enter_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }

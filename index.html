@@ -33,9 +33,9 @@
                         <img src="assets/logo/1.png" alt="img" class="header_logo">
                     </div>
                     <div class="profile_box_menu">
-                        <a href="#" class="profile_button">
+                        <button class="profile_button">
                             <i class="fa-solid fa-user"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="header_box_menu">
                         <button class="menu_button">
@@ -62,9 +62,9 @@
                             <img src="assets/vector/3.svg" alt="vk" class="social_img">
                         </div>
                         <div class="profile_box">
-                            <a href="#" class="profile_button">
+                            <button class="profile_button">
                                 <i class="fa-solid fa-user"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -481,6 +481,88 @@
         </div>
     </section>
 </footer>
+<div class="reg_popup_wrapper">
+    <div class="reg_popup_box">
+        <button class="close_regPopup-btn">
+            <img src="./assets/vector/xmark.svg" alt="close">
+        </button>
+        <div class="reg_popup_inner">
+            <div class="reg_popup_routes">
+                <button class="register_button Active">Регистрация</button>
+                <button class="login_button">Авторизация</button>
+            </div>
+            <div class="reg_popup_inputs">
+                <input type="text" class="reg_name_input" placeholder="Ваше имя...">
+                <span class="error_name_text">Введите имя!</span>
+                <input type="text" class="reg_data_input" placeholder="Дата рождения..." onfocus="(this.type='date')">
+                <span class="error_data_text">Введите дату!</span>
+                <input type="text" class="reg_mail_input" placeholder="E-mail...">
+                <span class="error_mail_text">Введите почту!</span>
+                <div class="reg_popup_sex">
+                    <div class="reg_popup_sex_inner">
+                        <span class="sex_name">Женщина</span>
+                        <div class="sex_box_toggler" id="woman">
+                            <span class="woman_toggler"></span>
+                        </div>
+                    </div>
+                    <div class="reg_popup_sex_inner">
+                        <span class="sex_name">Мужчина</span>
+                        <div class="sex_box_toggler" id="man">
+                            <span class="man_toggler"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg_popup_passwords">
+                    <div class="reg_pass_input-box">
+                        <input type="password" class="reg_pass_input" placeholder="Ваш пароль...">
+                        <button class="check_password">
+                            <i class="fa-solid fa-eye-slash" id="first-checker"></i>
+                        </button>
+                    </div>
+                    <span class="error_pass_text">Введите пароль!</span>
+                    <div class="reg_pass_input-box">
+                        <input type="password" class="reg_pass-again_input" placeholder="Потвердите пароль...">
+                        <button class="check-again_password">
+                            <i class="fa-solid fa-eye-slash" id="second-checker"></i>
+                        </button>
+                    </div>
+                    <span class="error_pass-again_text">Повторите пароль!</span>
+                </div>
+                <div class="reg_popup_getnews">
+                    <input type="checkbox" class="get_news_checkbox">
+                    <span class="get_news_text">Получать спецпредложения по E-mail</span>
+                </div>
+                <div class="reg_popup_reg-button">
+                    <div class="reg_button">Зарегестрироваться</div>
+                </div>
+            </div>
+        </div>
+        <div class="login_popup_inputs">
+            <div class="login_popup_inputs_inner">
+                <input type="text" class="login_name_input" placeholder="E-mail">
+                <input type="text" class="login_pass_input" placeholder="пароль">
+            </div>
+            <div class="login_popup_actions">
+                <button class="login_enter_button">Авторизоваться</button>
+                <button class="forget_password_button">забыли пароль?</button>
+            </div>
+            <div class="forget_password_wrapper">
+                <div class="forget_password_box">
+                    <button class="close_forget_popup_button">
+                        <img src="./assets/vector/xmark.svg" alt="close">
+                    </button>
+                    <input type="text" class="forget_mail_input" placeholder="Ваша почта">
+                    <span class="sent_password_text">На вашу почту отправлен сброс!</span>
+                    <button class="send_code_button">Отправить</button>
+                    <div class="get_password_box">
+                        <span class="get_password_text">Получили пароль?</span>
+                        <button class="enter_button">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
