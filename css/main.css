@@ -1755,6 +1755,7 @@ body.Hidden {
     font-weight: 400;
     font-size: 13px;
     cursor: pointer;
+    color: #000;
 }
 
 .forget_password_wrapper.Active {
@@ -1783,6 +1784,14 @@ body.Hidden {
     border-radius: 5px;
     background: #fff;
     border: 1px solid gainsboro;
+}
+
+.restore_pass_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
 }
 
 .forget_mail_input {
@@ -1838,7 +1847,6 @@ body.Hidden {
 }
 
 .get_password_box {
-    flex-grow: 1;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1857,4 +1865,5 @@ body.Hidden {
     border: none;
     background: none;
     cursor: pointer;
+    color: #000;
 }

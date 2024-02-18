@@ -454,7 +454,7 @@
         height: 15px;
     }
     .reg_button {
-        font-size: 12px;
+        font-size: 13px;
     }
     .reg_popup_box {
         padding: 20px 20px;
@@ -470,7 +470,7 @@
         font-size: 12px;
     }
     .login_enter_button {
-        font-size: 12px;
+        font-size: 13px;
     }
     .login_popup_inputs {
         padding: 15px 0 0;
@@ -490,7 +490,7 @@
     }
     .send_code_button  {
         width: 100%;
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 
