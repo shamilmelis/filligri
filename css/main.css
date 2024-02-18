@@ -1415,11 +1415,31 @@ body.Hidden {
     line-height: 14px;
     color: rgba(219, 47, 47, 1);
 }
-
+.reg_name_input-box {
+    position: relative;
+    width: 100%;
+}
 .reg_data_input.Error {
     border: 1px solid rgba(219, 47, 47, 1);
     transition: 0.2s;
 }
+.reg_name_input-clue.Passive {
+    display: none;
+}
+.reg_name_input-clue {
+    position: absolute;
+    display: block;
+    height: 40%;
+    top: 30%;
+    left: 6%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: gray;
+    z-index: 2;
+    background: #fff;
+}
+
 .reg_data_input {
     outline: none;
     padding: 14px 22px;

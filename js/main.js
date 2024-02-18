@@ -285,12 +285,20 @@ enterCloseFP.addEventListener('click', () => {
 
 const registration = document.querySelector('.reg_button')
 const birthDateInput = document.querySelector('.reg_data_input')
-birthDateInput.addEventListener('focus', (e) => {
-    e.target.type = 'date'
+
+birthDateInput.addEventListener('focus', () => {
+    const clue = document.querySelector('.reg_name_input-clue')
+    clue.style.display = 'none'
 })
 
-birthDateInput.addEventListener('blur', (e) => {
-    e.target.type = 'text'
+birthDateInput.addEventListener('blur', () => {
+    const clue = document.querySelector('.reg_name_input-clue')
+    clue.style.display = 'block'
+    if (birthDateInput.value) {
+        clue.style.display = 'none'
+    } else {
+        clue.style.display = 'block'
+    }
 })
 // const birthDateObject = {
 //     day: "",

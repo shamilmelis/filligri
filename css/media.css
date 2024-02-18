@@ -492,7 +492,10 @@
         width: 100%;
         font-size: 13px;
     }
-
+    .reg_name_input-clue {
+        font-size: 11px;
+        left: 4%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -511,6 +514,10 @@
     .auto-chemical_title {
         font-size: 10px;
     }
+    .reg_name_input-clue {
+        font-size: 11px;
+        left: 5%;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -528,6 +535,10 @@
 @media screen and (max-width: 370px) {
     .auto-chemical_title {
         font-size: 9px;
+    }
+    .reg_name_input-clue {
+        font-size: 11px;
+        left: 6%;
     }
 }
 
