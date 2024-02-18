@@ -285,7 +285,6 @@ enterCloseFP.addEventListener('click', () => {
 
 const registration = document.querySelector('.reg_button')
 const birthDateInput = document.querySelector('.reg_data_input')
-birthDateInput.type = 'text'
 birthDateInput.addEventListener('focus', (e) => {
     e.target.type = 'date'
 })
