@@ -496,7 +496,7 @@
                 <span class="error_name_text">Введите имя!</span>
                 <input type="date" class="reg_data_input" placeholder="Дата рождения...">
                 <span class="error_data_text">Введите дату!</span>
-                <input type="text" class="reg_mail_input" placeholder="E-mail...">
+                <input type="email" class="reg_mail_input" placeholder="E-mail...">
                 <span class="error_mail_text">Введите почту!</span>
                 <div class="reg_popup_sex">
                     <div class="reg_popup_sex_inner">
@@ -539,8 +539,10 @@
         </div>
         <div class="login_popup_inputs">
             <div class="login_popup_inputs_inner">
-                <input type="text" class="login_name_input" placeholder="E-mail">
-                <input type="text" class="login_pass_input" placeholder="пароль">
+                <input type="text" class="log_mail_input" placeholder="E-mail">
+                <span class="error-log_mail_text">Введите почту!</span>
+                <input type="text" class="log_pass_input" placeholder="пароль">
+                <span class="error-log_pass_text">Введите пароль!</span>
             </div>
             <div class="login_popup_actions">
                 <button class="login_enter_button">Авторизоваться</button>
@@ -551,7 +553,7 @@
                     <button class="close_forget_popup_button">
                         <img src="./assets/vector/xmark.svg" alt="close">
                     </button>
-                    <input type="text" class="forget_mail_input" placeholder="Ваша почта">
+                    <input type="email" class="forget_mail_input" placeholder="Ваша почта">
                     <span class="sent_password_text">На вашу почту отправлен сброс!</span>
                     <button class="send_code_button">Отправить</button>
                     <div class="get_password_box">

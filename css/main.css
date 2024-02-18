@@ -1264,12 +1264,17 @@ body.Hidden {
 .reg_popup_box.Login {
     height: 90%;
 }
+.reg_popup_box::-webkit-scrollbar {
+    width: 0;
+}
 .reg_popup_box {
+    overflow-y: auto;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 450px;
+    height: 90%;
     border-radius: 40px;
     background: #fff;
     gap: 10px;
@@ -1672,7 +1677,7 @@ body.Hidden {
     gap: 10px;
 }
 
-.login_name_input {
+.log_mail_input {
     outline: none;
     padding: 14px 22px;
     width: 100%;
@@ -1684,8 +1689,20 @@ body.Hidden {
     border: 1px solid rgba(202, 202, 202, 1);
     border-radius: 40px;
 }
+.error-log_mail_text.Active {
+    display: block;
+    animation: appear 0.3s ease-in;
+}
+.error-log_mail_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
+}
 
-.login_pass_input {
+.log_pass_input {
     outline: none;
     padding: 14px 22px;
     width: 100%;
@@ -1696,6 +1713,18 @@ body.Hidden {
     line-height: 19px;
     border: 1px solid rgba(202, 202, 202, 1);
     border-radius: 40px;
+}
+.error-log_pass_text.Active {
+    display: block;
+    animation: appear 0.3s ease-in;
+}
+.error-log_pass_text {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(219, 47, 47, 1);
 }
 
 .login_popup_actions {

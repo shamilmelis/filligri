@@ -392,8 +392,14 @@
     .login_button {
         font-size: 14px;
     }
+    .reg_popup_wrapper {
+        padding: 10px;
+    }
     .reg_popup_inner {
         gap: 10px;
+    }
+    .reg_popup_routes {
+        padding: 0 10px;
     }
     .reg_name_input {
         padding: 10px 18px;
@@ -453,12 +459,13 @@
     .reg_popup_box {
         padding: 20px 20px;
         width: 100%;
+        gap: 0;
     }
-    .login_name_input {
+    .log_mail_input {
         padding: 10px 18px;
         font-size: 12px;
     }
-    .login_pass_input {
+    .log_pass_input {
         padding: 10px 18px;
         font-size: 12px;
     }
@@ -466,7 +473,7 @@
         font-size: 12px;
     }
     .login_popup_inputs {
-        padding: 0;
+        padding: 15px 0 0;
     }
     .reg_popup_reg-button {
         width: 100%;

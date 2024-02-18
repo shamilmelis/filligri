@@ -244,6 +244,7 @@ sendNewPass.addEventListener('click', () => {
         setTimeout(() => {
             sentText.classList.remove('Active')
         }, 3000)
+        getMail.value = ''
         let timer = 60;
         if (codeArray.length > 0) {
             sendNewPass.classList.add('Disabled')
@@ -327,5 +328,26 @@ registration.addEventListener('click', () => {
         errorPass.classList.add('Active')
         errorPassAgain.classList.add('Active')
     }
+})
 
+const autorization = document.querySelector('.login_enter_button')
+autorization.addEventListener('click', () => {
+    const logEmail = document.querySelector('.log_mail_input')
+    const logPass = document.querySelector('.log_pass_input')
+    const errorEmail = document.querySelector('.error-log_mail_text')
+    const errorPass = document.querySelector('.error-log_pass_text')
+    if (logEmail.value) {
+        errorEmail.classList.remove('Active')
+        if (logPass.value) {
+            alert('Вы вошли!')
+            errorEmail.classList.remove('Active')
+            errorPass.classList.remove('Active')
+            logEmail.value = ''
+            logPass.value = ''
+        } else {
+            errorPass.classList.add('Active')
+        }
+    } else {
+        errorEmail.classList.add('Active')
+    }
 })
