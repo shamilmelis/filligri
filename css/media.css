@@ -492,12 +492,6 @@
         width: 100%;
         font-size: 13px;
     }
-    .reg_main_title {
-        font-size: 15px;
-    }
-    .log_main_title {
-        font-size: 15px;
-    }
 }
 
 @media screen and (max-width: 450px) {

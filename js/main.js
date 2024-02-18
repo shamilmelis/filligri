@@ -277,6 +277,12 @@ closeFP.addEventListener('click', () => {
     container.classList.remove('Active')
 })
 
+const enterCloseFP = document.querySelector('.enter_button')
+enterCloseFP.addEventListener('click', () => {
+    const container = document.querySelector('.forget_password_wrapper')
+    container.classList.remove('Active')
+})
+
 const registration = document.querySelector('.reg_button')
 // const birthDateInput = document.querySelector('.reg_data_input')
 // const birthDateObject = {
