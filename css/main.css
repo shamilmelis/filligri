@@ -1416,22 +1416,6 @@ body.Hidden {
     color: rgba(219, 47, 47, 1);
 }
 
-.reg_data_input-box {
-    position: relative;
-    width: 100%;
-}
-
-.reg_data_input-clue {
-    position: absolute;
-    top: -13%;
-    left: 6%;
-    background: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 11px;
-    z-index: 2;
-}
-
 .reg_data_input.Error {
     border: 1px solid rgba(219, 47, 47, 1);
     transition: 0.2s;
