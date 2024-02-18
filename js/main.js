@@ -278,30 +278,30 @@ closeFP.addEventListener('click', () => {
 })
 
 const registration = document.querySelector('.reg_button')
-const birthDateInput = document.querySelector('.reg_data_input')
-const birthDateObject = {
-    day: "",
-    month: "",
-    year: "",
-}
-birthDateInput.addEventListener('input', (e) => {
-    if (birthDateInput.value.length === 2) {
-        birthDateObject.day = e.target.value
-    }
-    if (birthDateInput.value.length === 4) {
-        birthDateObject.month = e.target.value.slice(2, 4)
-    }
-    if (birthDateInput.value.length === 8) {
-        birthDateObject.year = e.target.value.slice(4, 8)
-        birthDateInput.value = `${e.target.value.slice(0, 2)}.${e.target.value.slice(2, 4)}.${e.target.value.slice(4, 8)}`
-        birthDateInput.addEventListener('keydown', (e) => {
-            if (e.keyCode === 8) {
-                birthDateInput.value = ''
-            }
-        })
-    }
-    birthDateInput.value = birthDateInput.value.replace(' ', '')
-})
+// const birthDateInput = document.querySelector('.reg_data_input')
+// const birthDateObject = {
+//     day: "",
+//     month: "",
+//     year: "",
+// }
+// birthDateInput.addEventListener('input', (e) => {
+//     if (birthDateInput.value.length === 2) {
+//         birthDateObject.day = e.target.value
+//     }
+//     if (birthDateInput.value.length === 4) {
+//         birthDateObject.month = e.target.value.slice(2, 4)
+//     }
+//     if (birthDateInput.value.length === 8) {
+//         birthDateObject.year = e.target.value.slice(4, 8)
+//         birthDateInput.value = `${e.target.value.slice(0, 2)}.${e.target.value.slice(2, 4)}.${e.target.value.slice(4, 8)}`
+//         birthDateInput.addEventListener('keydown', (e) => {
+//             if (e.keyCode === 8) {
+//                 birthDateInput.value = ''
+//             }
+//         })
+//     }
+//     birthDateInput.value = birthDateInput.value.replace(' ', '')
+// })
 registration.addEventListener('click', () => {
     const errorName = document.querySelector('.error_name_text')
     const errorDate = document.querySelector('.error_data_text')
