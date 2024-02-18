@@ -492,6 +492,9 @@
         width: 100%;
         font-size: 13px;
     }
+    .reg_data_input-clue {
+        font-size: 9px;
+    }
 }
 
 @media screen and (max-width: 450px) {
