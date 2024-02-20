@@ -117,16 +117,23 @@ if (document.documentElement.clientWidth < 949) {
     })
 }
 
-const filterName = document.getElementsByClassName('filter_name')
+const filterName = document.getElementsByClassName('filter_box')
 for (let i = 0; i < filterName.length; i++) {
     filterName[i].addEventListener('click', (e) => {
-        if (e.target.parentNode.nextElementSibling.className === 'filter_options') {
-            e.target.parentNode.nextElementSibling.classList.add('Active')
-            e.target.nextElementSibling.classList.add('Active')
+        if (filterName[i].nextElementSibling.className === 'filter_options') {
+            filterName[i].nextElementSibling.classList.add('Active')
+            filterName[i].children[1].classList.add('Active')
         } else {
-            e.target.parentNode.nextElementSibling.classList.remove('Active')
-            e.target.nextElementSibling.classList.remove('Active')
+            filterName[i].nextElementSibling.classList.remove('Active')
+            filterName[i].children[1].classList.remove('Active')
         }
+    })
+}
+
+if (document.documentElement.clientWidth < 950) {
+    const filterOptions = document.querySelectorAll('.filter_options')
+    filterOptions.forEach(el => {
+        el.classList.add('Active')
     })
 }
 
@@ -151,14 +158,82 @@ priceToggle.addEventListener('click', () => {
     }
 })
 
-let move = false;
-const firstPoint = document.querySelector('.first_bar-point')
-firstPoint.addEventListener('mousedown', () => {
-    console.log('down')
-    move = true
-    if (move === true) {
-        firstPoint.addEventListener('mousemove', () => {
-            console.log('moving')
-        })
-    }
+const openFilters = document.querySelector('.filter_popup_btn')
+openFilters.addEventListener('click', () => {
+    const filterContainer = document.querySelector('.filtration_col')
+    filterContainer.classList.add('Active')
+    document.querySelector('body').classList.add('Noscroll')
 })
+
+const closeFilters = document.querySelector('.cancel-filter_button')
+closeFilters.addEventListener('click', () => {
+    const filterContainer = document.querySelector('.filtration_col')
+    filterContainer.classList.remove('Active')
+    document.querySelector('body').classList.remove('Noscroll')
+})
+
+const applyFilters = document.querySelector('.apply-filter_button')
+applyFilters.addEventListener('click', () => {
+    const filterContainer = document.querySelector('.filtration_col')
+    filterContainer.classList.remove('Active')
+    document.querySelector('body').classList.remove('Noscroll')
+})
+
+const allProductsCheckbox = document.getElementsByClassName('filter_checkbox')
+for (let i = 0; i < allProductsCheckbox.length; i++) {
+    allProductsCheckbox[i].addEventListener('click', () => {
+        const allProducts = document.querySelectorAll('.products_inner_box')
+            allProducts.forEach(el => {
+                switch (allProductsCheckbox[i].parentElement.parentElement.previousElementSibling.children[0].innerText) {
+                    case 'Бытовая химия':
+                        if (el.children[0].innerText !== 'Бытовая химия') {
+                            el.classList.add('Hidden')
+                         if (allProductsCheckbox[i].checked === false) {
+                             el.classList.remove('Hidden')
+                         }
+                        }
+                        break
+                    case  'Профессиональный клининг':
+                        if (el.children[0].innerText !== 'Профессиональный клининг') {
+                            el.classList.add('Hidden')
+                            if (allProductsCheckbox[i].checked === false) {
+                                el.classList.remove('Hidden')
+                            }
+                        }
+                        break
+                    case 'Автохимия':
+                        if (el.children[0].innerText !== 'Автохимия') {
+                            el.classList.add('Hidden')
+                            if (allProductsCheckbox[i].checked === false) {
+                                el.classList.remove('Hidden')
+                            }
+                        }
+                        break
+                    case 'Промышленная химия':
+                        if (el.children[0].innerText !== 'Промышленная химия') {
+                            el.classList.add('Hidden')
+                            if (allProductsCheckbox[i].checked === false) {
+                                el.classList.remove('Hidden')
+                            }
+                        }
+                        break
+                    case 'Уход за собой':
+                        if (el.children[0].innerText !== 'Уход за собой') {
+                            el.classList.add('Hidden')
+                            if (allProductsCheckbox[i].checked === false) {
+                                el.classList.remove('Hidden')
+                            }
+                        }
+                        break
+                    case 'Продукция для гостиниц':
+                        if (el.children[0].innerText !== 'Продукция для гостиниц') {
+                            el.classList.add('Hidden')
+                            if (allProductsCheckbox[i].checked === false) {
+                                el.classList.remove('Hidden')
+                            }
+                        }
+                        break
+                }
+            })
+    })
+}

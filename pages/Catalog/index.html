@@ -178,9 +178,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Бытовая химия</button>
-                                        <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                        <h3 class="filter_name">Бытовая химия</h3>
+                                        <span class="filter_chevron Active">
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options Active">
@@ -210,9 +210,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Профессиональный клининг</button>
-                                        <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                        <h3 class="filter_name">Профессиональный клининг</h3>
+                                        <span class="filter_chevron Active">
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options Active">
@@ -242,9 +242,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Автохимия</button>
-                                        <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                        <h3 class="filter_name">Автохимия</h3>
+                                        <span class="filter_chevron Active">
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options Active">
@@ -274,9 +274,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Промышленная химия</button>
+                                        <h3 class="filter_name">Промышленная химия</h3>
                                         <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options">
@@ -306,9 +306,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Уход за собой</button>
+                                        <h3 class="filter_name">Уход за собой</h3>
                                         <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options">
@@ -338,9 +338,9 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Продукция для гостиниц</button>
+                                        <h3 class="filter_name">Продукция для гостиниц</h3>
                                         <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
                                     <div class="filter_options">
@@ -370,17 +370,17 @@
                             <div class="filtration_col_inner">
                                 <div class="filtration_box_inner">
                                     <div class="filter_box">
-                                        <button class="filter_name">Цена</button>
+                                        <h3 class="filter_name">Цена</h3>
                                         <span class="filter_chevron">
-                                            <i class="fa-solid fa-chevron-up"></i>
+                                            <i class="fa-solid fa-chevron-down"></i>
                                         </span>
                                     </div>
-                                    <div class="filter_options">
+                                    <div class="filter_options Active">
                                         <div class="filter_price_inner">
                                             <div class="filter_price_box">
-                                                <input type="text" class="input_from_price" placeholder="0">
+                                                <input type="text" class="input_from_price" placeholder="0" min="1" max="99999">
                                                 <span class="divide_price_span">-</span>
-                                                <input type="text" class="input_to_price" placeholder="99999">
+                                                <input type="text" class="input_to_price" placeholder="99999" min="1" max="99999">
                                             </div>
                                             <div class="filter_price-bar_box">
                                                 <button class="first_bar-point"></button>
@@ -396,6 +396,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="filter-popup-actions_box">
+                                <button class="apply-filter_button">Применить</button>
+                                <button class="cancel-filter_button">Отменить</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-8 products_col">
@@ -407,6 +411,9 @@
                                 <span class="products_sort_title">Сортировка по:</span>
                                 <button class="sort_button Active">Дешевле</button>
                                 <button class="sort_button">Дороже</button>
+                            </div>
+                            <div class="products_filter_box">
+                                <button class="filter_popup_btn">Фильтр</button>
                             </div>
                             <div class="products_inner_box">
                                 <h3 class="products_type_title">Бытовая химия</h3>
