@@ -163,6 +163,9 @@
     .advantiges_section {
         padding: 0 10px;
     }
+    .catalog-link {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 900px) {

@@ -129,6 +129,9 @@
     .nav_routes > i {
         opacity: 1;
     }
+    .catalog-link {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 900px) {

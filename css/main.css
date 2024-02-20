@@ -364,6 +364,10 @@ body.Hidden {
     transition: 0.2s ease-in;
 }
 
+.catalog-link {
+    display: none;
+}
+
 .intro_section {
     position: relative;
     overflow: hidden;

@@ -1,20 +1,18 @@
+@media screen and (max-width: 1300px) {
+    .nextSlideButton {
+        right: 0 !important;
+    }
+    .previousSlideButton {
+        left: 0 !important;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .catalog_popup_box {
         width: 700px;
     }
 }
 
-@media screen and (max-width: 1120px) {
-    .work-time_box {
-        width: 50%;
-    }
-    .number-of-phone_box {
-        width: 50%;
-    }
-    .mail_box {
-        width: 50%;
-    }
-}
 
 @media screen and (max-width: 1020px) {
     .phone_route {
@@ -116,14 +114,16 @@
     .nav_routes > i {
         opacity: 1;
     }
-    .work-time_box {
-        width: 70%;
+    .ctlg_row {
+        flex-wrap: wrap;
     }
-    .number-of-phone_box {
-        width: 70%;
+    .filtration_col {
+        flex-basis: 100%;
+        padding: 0;
     }
-    .mail_box {
-        width: 70%;
+    .products_col {
+        flex-basis: 100%;
+        padding: 0;
     }
     .catalog-link {
         display: block;
@@ -157,63 +157,22 @@
     .catalog_button {
         font-size: 16px;
     }
+    .advantiges_title {
+        font-size: 18px;
+    }
+    .advantiges_row {
+        padding-top: 30px;
+    }
 }
 
 @media screen and (max-width: 780px) {
-    .filligri-img_col {
-        flex-basis: 100%;
+    .product_name {
+        font-size: 14px;
     }
-    .filligri-descr_col {
-        flex-basis: 100%;
-    }
-    .vector_2 {
-        top: 20%;
-        right: 3px;
-    }
-    .about_filligri_title {
-        font-size: 17px;
-    }
-    .about_filligri-bg_row {
-        padding: 0 10px;
-    }
-    .vector_3 {
-        width: 500px;
-    }
-    .work-time_box {
-        width: auto;
-    }
-    .number-of-phone_box {
-        width: auto;
-    }
-    .mail_box {
-        width: auto;
-    }
-    .form_col {
-        flex-basis: 100%;
-    }
-    .info_box {
-        align-items: flex-start;
-    }
-    .info_col {
-        padding-top: 50px;
-        flex-basis: 100%;
-    }
-    .contacts_title {
-        font-size: 20px;
-    }
-    .map_inner {
-        right: 1%;
-        transition: 0.2s;
-    }
-    .map_inner.Hide {
-        right: -100%;
-        transition: 0.2s;
-    }
-    .info_box {
-        gap: 30px;
+    .products_col {
+        padding: 30px;
     }
 }
-
 
 @media screen and (max-width: 720px) {
     .footer_section {
@@ -224,6 +183,27 @@
     }
     .catalog-routes_col {
         flex-basis: 100%;
+    }
+    .products_sort_title {
+        font-size: 14px;
+    }
+    .sort_button {
+        font-size: 13px;
+    }
+    .products_sort_box {
+        gap: 8px;
+    }
+    .products_type_title {
+        font-size: 16px;
+    }
+    .product_name {
+        font-size: 12px;
+    }
+    .product_descr {
+        letter-spacing: 0;
+    }
+    .product-to-cart_button {
+        font-size: 12px;
     }
 }
 
@@ -268,77 +248,21 @@
         flex-basis: 50%;
         transition: 0.5s ease-in;
     }
-    .contacts_section {
-        padding: 20px 0 0;
+    .filter_name {
+        font-size: 16px;
     }
-    .input_box {
-        border-radius: 25px;
-    }
-    .name_input {
-        font-size: 13px;
-    }
-    .email_input {
-        font-size: 13px;
-    }
-    .message_textarea {
-        font-size: 13px;
-        border-radius: 25px;
-    }
-    .submit_button {
-        margin-top: 10px;
-        padding: 11px 15px;
+    .filter_option_name {
         font-size: 12px;
     }
-    .work-time_title {
-        font-size: 16px;
+    .filter_checkbox {
+        width: 15px;
+        height: 15px;
     }
-    .work-time_daily {
-        font-size: 13px;
+    .products_inner_col {
+        flex-basis: 50%;
     }
-    .work-time_value {
-        font-size: 13px;
-    }
-    .work-time_box i {
-        font-size: 25px;
-    }
-    .number-of-phone_title {
-        font-size: 16px;
-    }
-    .number-of-phone_box_value {
-        font-size: 13px;
-    }
-    .number-of-phone_box i {
-        font-size: 25px;
-    }
-    .mail_box_title {
-        font-size: 16px;
-    }
-    .mail_box_value {
-        font-size: 13px;
-    }
-    .mail_box i {
-        font-size: 25px;
-    }
-    .map_inner {
-        padding: 30px;
-    }
-    .office_title {
-        font-size: 16px;
-    }
-    .office_adress {
-        font-size: 11px;
-    }
-    .office_point {
-        font-size: 21px;
-    }
-    .develop_title {
-        font-size: 16px;
-    }
-    .develop_adress {
-        font-size: 11px;
-    }
-    .develop_point {
-        font-size: 21px;
+    .product-to-cart_button {
+        width: 100%;
     }
 }
 
@@ -375,57 +299,46 @@
     .marshrut_link {
         font-size: 14px;
     }
-    .info_box {
-        align-items: center;
-        gap: 20px;
+    .products_col {
+        padding: 0;
     }
-    .work-time_box {
-        width: 50%;
+    .filtration_col {
+        padding: 0;
     }
-    .number-of-phone_box {
-        width: 50%;
+    .filtration_box {
+        padding: 0;
     }
-    .mail_box {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .work-time_box {
-        width: 60%;
-    }
-    .work-time_inner {
-        gap: 3px;
-    }
-    .number-of-phone_box {
-        width: 60%;
-    }
-    .number-of-phone_inner {
-        gap: 3px;
-    }
-    .mail_box {
-        width: 60%;
-    }
-    .mail_box_inner {
-        gap: 3px;
+    .ctlg_routes {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 359px) {
-    .map_open_btn {
-        display: block;
-        top: 80%;
-        right: 2%;
+@media screen and (max-width: 450px) {
+    .product_name {
+        font-size: 10px;
     }
-    .map_inner {
-        width: 270px;
+    .product_descr {
+        font-size: 9px;
+    }
+    .product_price {
+        font-size: 15px;
+    }
+    .products_sort_title {
+        font-size: 12px;
     }
 }
 
-
-@media (min-width: 360px) and (max-width: 780px) {
-    .map_open_btn {
-        display: block;
-        left: 1%;
+@media screen and (max-width: 360px) {
+    .products_inner_col {
+        flex-basis: 100%;
+    }
+    .product_name {
+        font-size: 13px;
+    }
+    .product_descr {
+        font-size: 11px;
+    }
+    .product_price {
+        font-size: 17px;
     }
 }
