@@ -171,6 +171,20 @@ closeFilters.addEventListener('click', () => {
     filterContainer.classList.remove('Active')
     document.querySelector('body').classList.remove('Noscroll')
 })
+const closeOnXFilters = document.querySelector('.close-filter-popup_button')
+closeOnXFilters.addEventListener('click', () => {
+    const filterContainer = document.querySelector('.filtration_col')
+    filterContainer.classList.remove('Active')
+    document.querySelector('body').classList.remove('Noscroll')
+})
+
+document.addEventListener('click', (e) => {
+    const filterContainer = document.querySelector('.filtration_col')
+    if (e.target.contains(filterContainer)) {
+        filterContainer.classList.remove('Active')
+        document.querySelector('body').classList.remove('Noscroll')
+    }
+})
 
 const applyFilters = document.querySelector('.apply-filter_button')
 applyFilters.addEventListener('click', () => {
@@ -179,61 +193,36 @@ applyFilters.addEventListener('click', () => {
     document.querySelector('body').classList.remove('Noscroll')
 })
 
+const products = [
+    'Бытовая химия',
+    'Профессиональный клининг',
+    'Автохимия',
+    'Промышленная химия',
+    'Уход за собой',
+    'Продукция для гостиниц'
+]
+
 const allProductsCheckbox = document.getElementsByClassName('filter_checkbox')
 for (let i = 0; i < allProductsCheckbox.length; i++) {
     allProductsCheckbox[i].addEventListener('click', () => {
         const allProducts = document.querySelectorAll('.products_inner_box')
-            allProducts.forEach(el => {
-                switch (allProductsCheckbox[i].parentElement.parentElement.previousElementSibling.children[0].innerText) {
-                    case 'Бытовая химия':
-                        if (el.children[0].innerText !== 'Бытовая химия') {
-                            el.classList.add('Hidden')
-                         if (allProductsCheckbox[i].checked === false) {
-                             el.classList.remove('Hidden')
-                         }
-                        }
-                        break
-                    case  'Профессиональный клининг':
-                        if (el.children[0].innerText !== 'Профессиональный клининг') {
-                            el.classList.add('Hidden')
-                            if (allProductsCheckbox[i].checked === false) {
-                                el.classList.remove('Hidden')
-                            }
-                        }
-                        break
-                    case 'Автохимия':
-                        if (el.children[0].innerText !== 'Автохимия') {
-                            el.classList.add('Hidden')
-                            if (allProductsCheckbox[i].checked === false) {
-                                el.classList.remove('Hidden')
-                            }
-                        }
-                        break
-                    case 'Промышленная химия':
-                        if (el.children[0].innerText !== 'Промышленная химия') {
-                            el.classList.add('Hidden')
-                            if (allProductsCheckbox[i].checked === false) {
-                                el.classList.remove('Hidden')
-                            }
-                        }
-                        break
-                    case 'Уход за собой':
-                        if (el.children[0].innerText !== 'Уход за собой') {
-                            el.classList.add('Hidden')
-                            if (allProductsCheckbox[i].checked === false) {
-                                el.classList.remove('Hidden')
-                            }
-                        }
-                        break
-                    case 'Продукция для гостиниц':
-                        if (el.children[0].innerText !== 'Продукция для гостиниц') {
-                            el.classList.add('Hidden')
-                            if (allProductsCheckbox[i].checked === false) {
-                                el.classList.remove('Hidden')
-                            }
-                        }
-                        break
+        const wrapper = document.querySelector('.products_inner_wrapper_box')
+        allProductsCheckbox[i].nextElementSibling.classList.add('Active')
+        allProductsCheckbox[i].parentElement.nextElementSibling.classList.add('Active')
+        console.log(allProductsCheckbox[i].parentElement.parentElement.parentElement.previousElementSibling.children[0].textContent)
+        let getCategory = allProductsCheckbox[i].parentElement.parentElement.parentElement.previousElementSibling.children[0].textContent;
+        products.map(name => {
+            Array.from(allProducts).filter(el => {
+                el.children[0].textContent === name ? el.classList.remove('Hidden') : el.classList.add('Hidden')
+                if (allProductsCheckbox[i].checked === false) {
+                    el.classList.remove('Hidden')
                 }
             })
+        })
+        console.log(products)
+        if (allProductsCheckbox[i].checked === false) {
+            allProductsCheckbox[i].nextElementSibling.classList.remove('Active')
+            allProductsCheckbox[i].parentElement.nextElementSibling.classList.remove('Active')
+        }
     })
 }

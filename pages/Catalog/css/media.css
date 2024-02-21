@@ -163,6 +163,9 @@
     .filter-popup-actions_box {
         display: flex;
     }
+    .close-filter-popup_button {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 950px) {
@@ -313,6 +316,7 @@
     }
     .filter_popup_btn {
         font-size: 13px;
+        padding: 12px 12px;
     }
     .include-only_title {
         font-size: 13px;
@@ -324,6 +328,27 @@
     .include-only_toggler {
         width: 20px;
         height: 20px;
+    }
+    .products_sort_box {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .sort_button.Active {
+        border-radius: 5px;
+        padding: 12px 20px;
+    }
+    .sort_button {
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .close-filter-popup_button {
+        top: 3%;
+        right: 4%;
+        font-size: 16px;
+        color: gray;
     }
 }
 
