@@ -173,6 +173,10 @@
     .filter_popup_btn {
         width: 50%;
     }
+    .filter_popup_btn i {
+        padding-left: 3px;
+        font-size: 10px;
+    }
     .sort_button {
         padding: 10px 12px;
         width: 100%;
@@ -184,8 +188,10 @@
     .sort_button i {
         color: rgba(116, 169, 193, 1);
         padding-left: 3px;
+        font-size: 10px;
     }
     .products_filter_price {
+        order: 2;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

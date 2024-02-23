@@ -132,7 +132,11 @@ for (let i = 0; i < filterName.length; i++) {
 
 if (document.documentElement.clientWidth < 950) {
     const filterOptions = document.querySelectorAll('.filter_options')
+    const filterChevrons = document.querySelectorAll('.filter_chevron')
     filterOptions.forEach(el => {
+        el.classList.add('Active')
+    })
+    filterChevrons.forEach(el => {
         el.classList.add('Active')
     })
 }
