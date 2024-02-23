@@ -315,6 +315,7 @@ body.Hidden {
     background: none;
     text-align: left;
     flex-grow: 1;
+    text-decoration: none;
 }
 
 .popup_box_routes_box.Active {
