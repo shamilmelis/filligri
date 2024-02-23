@@ -137,14 +137,28 @@ if (document.documentElement.clientWidth < 950) {
     })
 }
 
-const sortButton = document.getElementsByClassName('sort_button')
-for (let i = 0; i < sortButton.length; i++) {
-    sortButton[i].addEventListener('click', () => {
+if (document.documentElement.clientWidth > 950) {
+    const sortButton = document.getElementsByClassName('sort_button')
+    for (let i = 0; i < sortButton.length; i++) {
+        sortButton[i].addEventListener('click', () => {
+            const sortButtons = document.querySelectorAll('.sort_button')
+            setTimeout(() => {
+                sortButton[i].classList.add('Active')
+            }, 200)
+            sortButtons.forEach(el => {el.classList.remove('Active')})
+        })
+    }
+}
+
+if (document.documentElement.clientWidth < 950) {
+    const sortButton = document.querySelector('.sort_button')
+    sortButton.addEventListener('click', () => {
         const sortButtons = document.querySelectorAll('.sort_button')
-        setTimeout(() => {
-            sortButton[i].classList.add('Active')
-        }, 200)
-        sortButtons.forEach(el => {el.classList.remove('Active')})
+        if (sortButton.innerHTML === 'Дешевле <i class="fa-solid fa-up-down"></i>') {
+            sortButton.innerHTML = 'Дороже <i class="fa-solid fa-up-down"></i>'
+        } else {
+            sortButton.innerHTML = `Дешевле <i class="fa-solid fa-up-down"></i>`
+        }
     })
 }
 
@@ -194,33 +208,256 @@ applyFilters.addEventListener('click', () => {
 })
 
 const products = [
-    'Бытовая химия',
-    'Профессиональный клининг',
-    'Автохимия',
-    'Промышленная химия',
-    'Уход за собой',
-    'Продукция для гостиниц'
+    {
+        "id": 1,
+        "category": "Бытовая химия",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Профессиональный клининг",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Автохимия",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category": "Промышленная химия",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "category": "Уход за собой",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "category": "Продукция для гостиниц",
+        "prods": [
+            {
+                "id": 1,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 2,
+                "name": "СРЕДСТВО ДЛ СТЕКОЛ И ЗЕРКАЛ ECOLOGICA",
+                "description": "Средство для стекол и зеркал",
+                "price": 128,
+                "currency": "₽",
+                "discount": false,
+            },
+            {
+                "id": 3,
+                "name": "СРЕДСТВО МЫТЬЯ ПОЛА SYNERGETIC",
+                "description": "Концентрированное универсальное средство",
+                "price": 220,
+                "currency": "₽",
+                "discount": true,
+            }
+        ]
+    }
 ]
 
+const wrapper = document.querySelector('.products_inner_wrapper_box')
+let selectedFilter = ''
+const getProducts = () => {
+        if (selectedFilter === '') {
+            products.map(elem => {
+                wrapper.innerHTML += `<div class="products_inner_box">
+                    <h3 class="products_type_title">${elem.category}</h3>
+                    <div class="products_inner_row">
+                      ${elem.prods.map(product => {
+                    return (
+                        `<div class="col-4 products_inner_col">
+                             <div class="product_box">
+                                 ${product.discount === true ? '<span class="product_discount">-5%</span>' : ''}
+                                 <a href="#" class="product_link"></a>
+                                 <img src="./assets/cards/1.png" alt="product" class="product_img">
+                                 <h3 class="product_name">${product.name}</h3>
+                                 <p class="product_descr">${product.description}</p>
+                                 <span class="product_price">${product.price + ' ' + product.currency}</span>
+                                 <button class="product-to-cart_button">В корзину</button>
+                             </div>
+                     </div>`
+                    )
+                }).join('')}
+                    </div>
+                </div>`
+            })
+        } else {
+            products.filter(el => el.category === selectedFilter).map(elem => {
+                wrapper.innerHTML += `<div class="products_inner_box">
+                    <h3 class="products_type_title">${elem.category}</h3>
+                    <div class="products_inner_row">
+                      ${elem.prods.map(product => {
+                    return (
+                        `<div class="col-4 products_inner_col">
+                             <div class="product_box">
+                                 ${product.discount === true ? '<span class="product_discount">-5%</span>' : ''}
+                                 <a href="#" class="product_link"></a>
+                                 <img src="./assets/cards/1.png" alt="product" class="product_img">
+                                 <h3 class="product_name">${product.name}</h3>
+                                 <p class="product_descr">${product.description}</p>
+                                 <span class="product_price">${product.price + ' ' + product.currency}</span>
+                                 <button class="product-to-cart_button">В корзину</button>
+                             </div>
+                     </div>`
+                    )
+                }).join('')}
+                    </div>
+                </div>`
+            })
+        }
+}
+getProducts()
 const allProductsCheckbox = document.getElementsByClassName('filter_checkbox')
 for (let i = 0; i < allProductsCheckbox.length; i++) {
     allProductsCheckbox[i].addEventListener('click', () => {
         const allProducts = document.querySelectorAll('.products_inner_box')
-        const wrapper = document.querySelector('.products_inner_wrapper_box')
         allProductsCheckbox[i].nextElementSibling.classList.add('Active')
         allProductsCheckbox[i].parentElement.nextElementSibling.classList.add('Active')
-        console.log(allProductsCheckbox[i].parentElement.parentElement.parentElement.previousElementSibling.children[0].textContent)
-        let getCategory = allProductsCheckbox[i].parentElement.parentElement.parentElement.previousElementSibling.children[0].textContent;
-        products.map(name => {
-            Array.from(allProducts).filter(el => {
-                el.children[0].textContent === name ? el.classList.remove('Hidden') : el.classList.add('Hidden')
-                if (allProductsCheckbox[i].checked === false) {
-                    el.classList.remove('Hidden')
-                }
-            })
-        })
-        console.log(products)
+        let getCategory = allProductsCheckbox[i].title
+        console.log(getCategory)
+        selectedFilter = getCategory
+        getProducts()
         if (allProductsCheckbox[i].checked === false) {
+            let removedCheckbox = allProductsCheckbox[i].title
+            console.log(removedCheckbox + ' ' + 'Убрано')
+            console.log(products)
+            selectedFilter = ''
+            getProducts()
             allProductsCheckbox[i].nextElementSibling.classList.remove('Active')
             allProductsCheckbox[i].parentElement.nextElementSibling.classList.remove('Active')
         }

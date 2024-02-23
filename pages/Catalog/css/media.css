@@ -159,12 +159,37 @@
     }
     .products_filter_box {
         display: flex;
+        gap: 10px;
     }
     .filter-popup-actions_box {
         display: flex;
     }
     .close-filter-popup_button {
         display: block;
+    }
+    .products_sort_box {
+        display: none;
+    }
+    .filter_popup_btn {
+        width: 50%;
+    }
+    .sort_button {
+        padding: 10px 12px;
+        width: 100%;
+        border: 2px solid rgba(116, 169, 193, 1);
+        border-radius: 5px;
+        background: #fff;
+        color: rgba(116, 169, 193, 1);;
+    }
+    .sort_button i {
+        color: rgba(116, 169, 193, 1);
+        padding-left: 3px;
+    }
+    .products_filter_price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
     }
 }
 
@@ -177,6 +202,9 @@
         width: 200%;
         height: 2px;
         background: rgba(116, 169, 193, 0.37);;
+    }
+    .products_filter_price {
+        display: none;
     }
 }
 
@@ -238,6 +266,9 @@
         font-size: 14px;
     }
     .sort_button {
+        font-size: 11px;
+    }
+    .filter_popup_btn {
         font-size: 11px;
     }
     .products_sort_box {
@@ -308,6 +339,14 @@
         width: 15px;
         height: 15px;
     }
+    .checkmark {
+        width: 16px;
+        height: 16px;
+    }
+    .checkmark.Active:after {
+        left: 18%;
+        font-size: 10px;
+    }
     .products_inner_col {
         flex-basis: 50%;
     }
@@ -315,7 +354,6 @@
         width: 100%;
     }
     .filter_popup_btn {
-        font-size: 13px;
         padding: 12px 12px;
     }
     .include-only_title {
@@ -334,15 +372,12 @@
         width: 100%;
         align-items: flex-start;
     }
+    .sort_button {
+        padding: 12px 12px;
+    }
     .sort_button.Active {
         border-radius: 5px;
         padding: 12px 20px;
-    }
-    .sort_button {
-        width: 100%;
-        padding: 12px 20px;
-        border-radius: 5px;
-        background: rgba(0, 0, 0, 0.1);
     }
     .close-filter-popup_button {
         top: 3%;
@@ -403,6 +438,9 @@
     }
     .cancel-filter_button {
         font-size: 13px;
+    }
+    .products_filter_box {
+        gap: 5px;
     }
 }
 
