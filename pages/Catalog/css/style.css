@@ -961,7 +961,8 @@ main {
 
 .products_banner_box {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .products_banner_img {

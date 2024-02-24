@@ -148,7 +148,7 @@ if (document.documentElement.clientWidth > 950) {
             const sortButtons = document.querySelectorAll('.sort_button')
             setTimeout(() => {
                 sortButton[i].classList.add('Active')
-            }, 200)
+            }, 100)
             sortButtons.forEach(el => {el.classList.remove('Active')})
         })
     }
