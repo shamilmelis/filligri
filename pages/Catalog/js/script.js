@@ -211,6 +211,8 @@ applyFilters.addEventListener('click', () => {
     document.querySelector('body').classList.remove('Noscroll')
 })
 
+const removeFilter = []
+const selectedFilters = []
 const products = [
     {
         "id": 1,
@@ -393,11 +395,9 @@ const products = [
         ]
     }
 ]
-
 const wrapper = document.querySelector('.products_inner_wrapper_box')
-let selectedFilter = ''
 const getProducts = () => {
-        if (selectedFilter === '') {
+        if (selectedFilters.length === 0) {
             products.map(elem => {
                 wrapper.innerHTML += `<div class="products_inner_box">
                     <h3 class="products_type_title">${elem.category}</h3>
@@ -420,14 +420,16 @@ const getProducts = () => {
                     </div>
                 </div>`
             })
-        } else {
-            products.filter(el => el.category === selectedFilter).map(elem => {
-                wrapper.innerHTML += `<div class="products_inner_box">
+        } else if (selectedFilters.length > 0) {
+            wrapper.innerHTML = ''
+            setTimeout(() => {
+                selectedFilters.map(elem => {
+                    wrapper.innerHTML += `<div class="products_inner_box">
                     <h3 class="products_type_title">${elem.category}</h3>
                     <div class="products_inner_row">
                       ${elem.prods.map(product => {
-                    return (
-                        `<div class="col-4 products_inner_col">
+                        return (
+                            `<div class="col-4 products_inner_col">
                              <div class="product_box">
                                  ${product.discount === true ? '<span class="product_discount">-5%</span>' : ''}
                                  <a href="#" class="product_link"></a>
@@ -438,11 +440,12 @@ const getProducts = () => {
                                  <button class="product-to-cart_button">В корзину</button>
                              </div>
                      </div>`
-                    )
-                }).join('')}
+                        )
+                    }).join('')}
                     </div>
                 </div>`
-            })
+                })
+            }, 500)
         }
 }
 getProducts()
@@ -450,20 +453,21 @@ const allProductsCheckbox = document.getElementsByClassName('filter_checkbox')
 for (let i = 0; i < allProductsCheckbox.length; i++) {
     allProductsCheckbox[i].addEventListener('click', () => {
         const allProducts = document.querySelectorAll('.products_inner_box')
-        allProductsCheckbox[i].nextElementSibling.classList.add('Active')
-        allProductsCheckbox[i].parentElement.nextElementSibling.classList.add('Active')
-        let getCategory = allProductsCheckbox[i].title
-        console.log(getCategory)
-        selectedFilter = getCategory
+            allProductsCheckbox[i].nextElementSibling.classList.add('Active')
+            allProductsCheckbox[i].parentElement.nextElementSibling.classList.add('Active')
+            let getCategory = allProductsCheckbox[i].title
+            products.map(prod => {
+                if (prod.category === getCategory) {
+                    console.log(selectedFilters)
+                    selectedFilters.push(prod)
+                }
+                if (allProductsCheckbox[i].checked === false) {
+                    let removedCheckBox = allProductsCheckbox[i].title;
+                    setTimeout(() => {getProducts()}, 500)
+                    allProductsCheckbox[i].nextElementSibling.classList.remove('Active')
+                    allProductsCheckbox[i].parentElement.nextElementSibling.classList.remove('Active')
+                }
+            })
         getProducts()
-        if (allProductsCheckbox[i].checked === false) {
-            let removedCheckbox = allProductsCheckbox[i].title
-            console.log(removedCheckbox + ' ' + 'Убрано')
-            console.log(products)
-            selectedFilter = ''
-            getProducts()
-            allProductsCheckbox[i].nextElementSibling.classList.remove('Active')
-            allProductsCheckbox[i].parentElement.nextElementSibling.classList.remove('Active')
-        }
     })
 }
