@@ -407,7 +407,7 @@ const getProducts = () => {
                         `<div class="col-4 products_inner_col">
                              <div class="product_box">
                                  ${product.discount === true ? '<span class="product_discount">-5%</span>' : ''}
-                                 <a href="#" class="product_link"></a>
+                                 <a href="../../../../Filligri/pages/CardOfProduct/index.html" class="product_link"></a>
                                  <img src="./assets/cards/1.png" alt="product" class="product_img">
                                  <h3 class="product_name">${product.name}</h3>
                                  <p class="product_descr">${product.description}</p>
@@ -432,7 +432,7 @@ const getProducts = () => {
                             `<div class="col-4 products_inner_col">
                              <div class="product_box">
                                  ${product.discount === true ? '<span class="product_discount">-5%</span>' : ''}
-                                 <a href="#" class="product_link"></a>
+                                 <a href="../../../../Filligri/pages/CardOfProduct/index.html" class="product_link"></a>
                                  <img src="./assets/cards/1.png" alt="product" class="product_img">
                                  <h3 class="product_name">${product.name}</h3>
                                  <p class="product_descr">${product.description}</p>
