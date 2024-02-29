@@ -141,6 +141,8 @@ featuresBtn.addEventListener('click', () => {
     featuresBtn.classList.add('Active')
     document.querySelector('.descr_button').classList.remove('Active')
     document.querySelector('.feature_bar').classList.remove('Active')
+    document.querySelector('.features_box').classList.add('Active')
+    document.querySelector('.description_box').classList.remove('Active')
 })
 
 const descrBtn = document.querySelector('.descr_button')
@@ -148,4 +150,32 @@ descrBtn.addEventListener('click', () => {
    descrBtn.classList.add('Active')
     document.querySelector('.feature_button').classList.remove('Active')
     document.querySelector('.feature_bar').classList.add('Active')
+    document.querySelector('.features_box').classList.remove('Active')
+    document.querySelector('.description_box').classList.add('Active')
+})
+
+const allProductImages = document.querySelectorAll('.product-inner-image')
+allProductImages.forEach(el => {
+    el.addEventListener('click', (e) => {
+        let selected = document.querySelector('.product-selected-image')
+        selected.src = `${e.target.src}`
+        allProductImages.forEach(el => el.classList.remove('Selected'))
+        el.classList.add('Selected')
+    })
+})
+
+const imageZoom = document.querySelector('.product-selected-image')
+let selectedImageForZoom = ''
+imageZoom.addEventListener('click', (e) => {
+    document.querySelector('.image-zoom_wrapper').classList.add('Active')
+    document.querySelector('body').classList.add('NoScroll')
+    selectedImageForZoom = `${e.target.src}`
+    document.querySelector('.selectedImageForZoom').src = selectedImageForZoom
+})
+
+const closeImageZoom = document.querySelector('.close-image-zoom_btn')
+closeImageZoom.addEventListener('click', () => {
+    document.querySelector('.image-zoom_wrapper').classList.remove('Active')
+    document.querySelector('body').classList.remove('NoScroll')
+    selectedImageForZoom = ''
 })
